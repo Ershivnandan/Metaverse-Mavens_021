@@ -16,20 +16,26 @@
     />
     <!-- Google Fonts  -->
 
-    
+    <!-- Tailwind CSS CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS CDN  -->
+
+
   </head>
   <body>
     <!-- navbar  -->
     <div class="navbar">
-      <a href="#" onclick="loadPage('men.html')">Men</a>
-      <a href="#" onclick="loadPage('women.html')">Women</a>
-      <a href="#" onclick="loadPage('homeLiving.html')">Others</a>
+      <a href="#" onclick="loadPage('./pages/men.html')">Men</a>
+      <a href="#" onclick="loadPage('./pages/women.html')">Women</a>
+      <a href="#" onclick="loadPage('./pages/homeLiving.html')">Others</a>
     </div>
 
-    <div id="content">
+    <div id="content" class="text-3xl font-bold">
       <h1>Welcome to the Dynamic Website</h1>
       <p>Click the tabs above to load different content dynamically!</p>
     </div>
+
+    
   </body>
 
   <script src="script.js"></script>
