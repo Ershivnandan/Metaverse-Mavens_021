@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function() {
+  loadPage('./pages/men.html');
+});
+
 function loadPage(page) {
   fetch(page)
     .then((response) => response.text())

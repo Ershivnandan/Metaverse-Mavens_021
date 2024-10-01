@@ -12,8 +12,9 @@
   --font-family: "Poppins", "Helvetica", "Arial", sans-serif;
   --font-color: #282c3f; /* General text color */
   --heading-color: #000000; /* Heading color */
+  --text-size-extra-small: 8px;
   --text-size-small: 12px;
-  --text-size-medium: 16px;
+  --text-size-medium: 14px;
   --text-size-large: 20px;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
