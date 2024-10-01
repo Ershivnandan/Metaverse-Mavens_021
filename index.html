@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Myntra</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="globalStyle.css">
+  </head>
+  <body>
+    <!-- navbar  -->
+    <div class="navbar">
+      <a href="#" onclick="loadPage('men.html')">Men</a>
+      <a href="#" onclick="loadPage('women.html')">Women</a>
+      <a href="#" onclick="loadPage('home&applience.html')">Others</a>
+    </div>
+
+    <div id="content">
+      <h1>Welcome to the Dynamic Website</h1>
+      <p>Click the tabs above to load different content dynamically!</p>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
 </html>
