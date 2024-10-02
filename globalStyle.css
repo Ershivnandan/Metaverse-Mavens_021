@@ -1,0 +1,66 @@
+:root {
+  /* Color Palette */
+  --primary-color: #ff3f6c; /* Myntra's signature pinkish-red */
+  --secondary-color: #282c3f; /* Dark gray used for text */
+  --accent-color: #fbae17; /* Yellowish accent color */
+  --background-color: #f2f2f2; /* Light gray background */
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --border-color: #e0e0e0; /* Light gray for borders */
+
+  /* Typography */
+  --font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  --font-color: #282c3f; /* General text color */
+  --heading-color: #000000; /* Heading color */
+  --text-size-extra-small: 8px;
+  --text-size-small: 12px;
+  --text-size-medium: 14px;
+  --text-size-large: 20px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+
+  /* Buttons */
+  --button-padding: 12px 24px;
+  --button-radius: 4px;
+
+  /* Shadows */
+  --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+}
+.navbar {
+  display: flex;
+  background-color: var(--secondary-color);
+  padding: var(--spacing-medium);
+  box-shadow: var(--box-shadow);
+}
+
+.navbar a {
+  color: var(--white-color);
+  padding: var(--spacing-small) var(--spacing-medium);
+  text-decoration: none;
+  text-align: center;
+  font-size: var(--text-size-medium);
+  font-weight: var(--font-weight-normal);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: var(--accent-color);
+  color: var(--black-color);
+}
+
+#content {
+  padding: 20px;
+}
+
+#hoverDropdown2 {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
