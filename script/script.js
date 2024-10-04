@@ -480,7 +480,7 @@ function handleProfileDropdown(isHover) {
     dropdown2.classList.add('opacity-0');
     setTimeout(() => {
       dropdown2.classList.add('hidden');
-    }, 300); // Matches the transition duration
+    }, 300);
   }
 }
 
