@@ -8,35 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <style>
-        body {
-            box-sizing: border-box;
-
-        }
-
-        swiper-container {
-            position: relative;
-            width: 100%;
-            height: auto;
-        }
-
-        swiper-slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        swiper-slide img {
-            width: 100%;
-            height: auto;
-        }
-
-        .favtext {
-            letter-spacing: .15em;
-        }
-    </style>
-<link rel="stylesheet" href="../styles/navbar.css">
-
+    <link rel="stylesheet" href="../styles/navbar.css">
 </head>
 
 <body>
@@ -65,37 +37,37 @@
                             <!-- Men Menu Item -->
                             <div class="group relative border-b-4 border-transparent hover:border-[#ee5f73] pt-4 pb-3 transition-all duration-300"
                                 onmouseover="showDropdown('Men')" onmouseout="hideDropdown()">
-                                <a href="./pages/men.html" class="uppercase text-[#2c3042]">Men</a>
+                                <a href="../index.html" class="uppercase text-[#2c3042]">Men</a>
                             </div>
 
                             <!-- Women Menu Item -->
                             <div class="group relative border-b-4 border-transparent hover:border-[#fb56c1] pt-4 pb-3 transition-all duration-300"
                                 onmouseover="showDropdown('Women')" onmouseout="hideDropdown()">
-                                <a href="./pages/women.html" class="uppercase text-[#2c3042]">Women</a>
+                                <a href="./women.html" class="uppercase text-[#2c3042]">Women</a>
                             </div>
 
                             <!-- Kids Menu Item -->
                             <div class="group relative border-b-4 border-transparent hover:border-[#f26a10] pt-4 pb-3 transition-all duration-300"
                                 onmouseover="showDropdown('Kids')" onmouseout="hideDropdown()">
-                                <a href="./pages/kidsSection.html" class="uppercase text-[#2c3042]">Kids</a>
+                                <a href="./kidsSection.html" class="uppercase text-[#2c3042]">Kids</a>
                             </div>
 
                             <!-- Home & Living Menu Item -->
                             <div class="group relative border-b-4 border-transparent hover:border-[#f2c210] pt-4 pb-3 transition-all duration-300"
                                 onmouseover="showDropdown('Home & Living')" onmouseout="hideDropdown()">
-                                <a href="./pages/homeLiving.html" class="uppercase text-[#2c3042]">Home & Living</a>
+                                <a href="./homeLiving.html" class="uppercase text-[#2c3042]">Home & Living</a>
                             </div>
 
                             <!-- Beauty Menu Item -->
                             <div class="group relative border-b-4 border-transparent hover:border-[#0db7af] pt-4 pb-3 transition-all duration-300"
                                 onmouseover="showDropdown('Beauty')" onmouseout="hideDropdown()">
-                                <a href="./pages/beauty.html" class="uppercase text-[#2c3042]">Beauty</a>
+                                <a href="./beauty.html" class="uppercase text-[#2c3042]">Beauty</a>
                             </div>
 
                             <!-- Studio Menu Item -->
                             <div class="group relative border-b-4 border-transparent hover:border-[#ff3f6c] pt-4 pb-3 transition-all duration-300"
                                 onmouseover="showDropdown('Studio')" onmouseout="hideDropdown()">
-                                <a href="./pages/studio.html" class="uppercase text-[#2c3042]">Studio <sup
+                                <a href="./studio.html" class="uppercase text-[#2c3042]">Studio <sup
                                         class="text-pink-500">New</sup></a>
                             </div>
 
@@ -438,73 +410,70 @@
         </div>
     </div>
 
+    <!-- slider-image -->
 
-
-    <div class="relative w-full h-96 overflow-hidden">
+    <div class="relative w-full h-auto overflow-hidden pt-10 pb-16 sm:pb-4">
         <swiper-container class="mySwiper" pagination-clickable="true" space-between="30" centered-slides="true"
             autoplay-delay="2500" autoplay-disable-on-interaction="false">
 
             <swiper-slide>
-                <img class="w-full h-full object-contain" src="https://i.ibb.co/47C0Htd/slide1.jpg" alt="slide1">
+                <img class="w-full h-full object-contain"
+                    src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/b97efc90-2359-48ea-bf74-9c72d552fdef1649782019503-T-Shirts-_-Shorts_Desk_Banner.jpg"
+                    alt="slide1">
             </swiper-slide>
             <swiper-slide>
-                <img class="w-full h-full object-contain" src="https://i.ibb.co/PDHdsDQ/slide2.jpg" alt="slide2">
+                <img class="w-full h-full object-contain"
+                    src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/a606c305-a23f-4fe3-a630-343ced4a10261649782019470-Kids-Wear_Desk_Banner.jpg?v1"
+                    alt="slide2">
             </swiper-slide>
             <swiper-slide>
-                <img class="w-full h-full object-contain" src="https://i.ibb.co/hYxNpn6/slide3.jpg" alt="slide3">
+                <img class="w-full h-full object-contain"
+                    src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/09f0df54-6f8f-4bb0-a4b9-3b374d4538561649782019495-Top-Brands-2_Desk_Banner.jpg"
+                    alt="slide3">
             </swiper-slide>
             <swiper-slide>
-                <img class="w-full h-full object-contain" src="https://i.ibb.co/GPKbsVv/slide4.jpg" alt="slide4">
+                <img class="w-full h-full object-contain"
+                    src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/0e977afc-87e2-4798-a0d6-bfb05ba796911649782019489-Super-Bottoms_Desk_Banner.jpg"
+                    alt="slide4">
             </swiper-slide>
             <swiper-slide>
-                <img class="w-full h-full object-contain" src="https://i.ibb.co/BNyXM4K/slide5.jpg" alt="slide5">
+                <img class="w-full h-full object-contain"
+                    src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/12/7f5e46bd-da64-489b-bbab-ebf67b12f8091649782019457-Innerwear_Desk_Banner.jpg"
+                    alt="slide5">
             </swiper-slide>
         </swiper-container>
 
-        <div class="swiper-pagination"></div> <!-- Add pagination container -->
     </div>
-
-
 
     <!-- favourite brand  -->
 
-    <div class="brandtext">
-        <h4
-            class="favtext uppercase text-[#3e4152] tracking-[.15em] text-[1.8em] my-12 mx-[70px] max-h-[5em] font-bold">
-            Favourite
-            Brands</h4>
-    </div>
+
+    <h4 class="favtext uppercase text-[#3e4152] tracking-[.15em] text-[1.8em] my-12 mx-[70px] max-h-[5em] font-bold">
+        Favourite
+        Brands</h4>
+
 
 
     <!-- brandLogo section  -->
-    <div class="flex justify-center items-center w-full h-[200px]">
-        <img src="https://i.ibb.co/1fSgtSN/logo1.jpg" alt="logo1"
-            class="w-[11%] h-auto object-contain flex-basis-1/9" />
-        <img src="https://i.ibb.co/YN2k32p/logo2.jpg" alt="logo2"
-            class="w-[11%] h-auto object-contain flex-basis-1/9" />
-        <img src="https://i.ibb.co/J5ccsD8/logo3.jpg" alt="logo3"
-            class="w-[11%] h-auto object-contain flex-basis-1/9" />
-        <img src="https://i.ibb.co/hfFCFDr/logo4.jpg" alt="logo4"
-            class="w-[11%] h-auto object-contain flex-basis-1/9" />
-        <img src="https://i.ibb.co/6Pc9RCD/logo5.jpg" alt="logo5"
-            class="w-[11%] h-auto object-contain flex-basis-1/9" />
-        <img src="https://i.ibb.co/KmY4fDB/logo6.jpg" alt="logo6"
-            class="w-[11%] h-auto object-contain flex-basis-1/9" />
-        <img src="https://i.ibb.co/Wg49S1L/logo7.jpg" alt="logo7"
-            class="w-[11%] h-auto object-contain flex-basis-1/9" />
-        <img src="https://i.ibb.co/sVVNgZ8/logo8.jpg" alt="logo8"
-            class="w-[11%] h-auto object-contain flex-basis-1/9" />
-        <img src="https://i.ibb.co/h2CwpvP/logo9.jpg" alt="logo9"
-            class="w-[11%] h-auto object-contain flex-basis-1/9" />
+    <div class="flex justify-center items-center w-full h-[auto]">
+        <img src="https://i.ibb.co/1fSgtSN/logo1.jpg" alt="logo1" class="w-[11%] h-auto object-contain " />
+        <img src="https://i.ibb.co/YN2k32p/logo2.jpg" alt="logo2" class="w-[11%] h-auto object-contain " />
+        <img src="https://i.ibb.co/J5ccsD8/logo3.jpg" alt="logo3" class="w-[11%] h-auto object-contain " />
+        <img src="https://i.ibb.co/hfFCFDr/logo4.jpg" alt="logo4" class="w-[11%] h-auto object-contain " />
+        <img src="https://i.ibb.co/6Pc9RCD/logo5.jpg" alt="logo5" class="w-[11%] h-auto object-contain " />
+        <img src="https://i.ibb.co/KmY4fDB/logo6.jpg" alt="logo6" class="w-[11%] h-auto object-contain " />
+        <img src="https://i.ibb.co/Wg49S1L/logo7.jpg" alt="logo7" class="w-[11%] h-auto object-contain /9" />
+        <img src="https://i.ibb.co/sVVNgZ8/logo8.jpg" alt="logo8" class="w-[11%] h-auto object-contain " />
+        <img src="https://i.ibb.co/h2CwpvP/logo9.jpg" alt="logo9" class="w-[11%] h-auto object-contain " />
     </div>
 
     <!-- top-picks-section -->
 
-    <div class="toppick">
-        <h4 class="uppercase text-[#3e4152] tracking-[.15em] text-[1.8em] my-12 mx-[70px] max-h-[5em] font-bold">Top
-            picks
-        </h4>
-    </div>
+
+    <h4 class="uppercase text-[#3e4152] tracking-[.15em] text-[1.8em] my-12 mx-[70px] max-h-[5em] font-bold">Top
+        picks
+    </h4>
+
     <div class="flex justify-center items-center w-full h-[150px]">
         <img src="https://i.ibb.co/GtVcgfB/dis1.jpg" alt="dis1" class="w-[9%] h-auto object-contain">
         <img src="https://i.ibb.co/rcCj8V9/dis2.jpg" alt="dis2" class="w-[9%] h-auto object-contain">
@@ -523,14 +492,14 @@
     <!-- iconic-brand -->
 
 
-    <div class="iconic-brand"></div>
+
     <h4 class="uppercase text-[#3e4152] tracking-[.15em] text-[1.8em] my-12 mx-[70px] max-h-[5em] font-bold">Iconic
         Brands
     </h4>
-    </div>
+
 
     <div class="flex justify-center items-center w-[100%] h-[350px]">
-        <img src="https://i.ibb.co/3S34NCk/icb1.jpg" alt="icb1" class="w-[20%] h-auto object-cover items-center">
+        <img src="https://i.ibb.co/3S34NCk/icb1.jpg" alt="icb1" class="w-[20%] h-auto object-cover">
         <img src="https://i.ibb.co/y6M3QSV/icb2.jpg" alt="icb2" class="w-[20%] h-auto object-cover">
         <img src="https://i.ibb.co/tJvvFhH/icb3.jpg" alt="icb3" class="w-[20%] h-auto object-cover">
         <img src="https://i.ibb.co/5xHT0VV/icb4.jpg" alt="icb4" class="w-[20%] h-auto object-cover">
@@ -540,13 +509,10 @@
 
     <!-- Fashion & Essentials -->
 
-
-    <div class="fashion">
-        <h4 class="uppercase text-[#3e4152] tracking-[.15em] text-[1.8em] my-12 mx-[70px] max-h-[5em] font-bold">Fashion
-            &
-            Essentials
-        </h4>
-    </div>
+    <h4 class="uppercase text-[#3e4152] tracking-[.15em] text-[1.8em] my-12 mx-[70px] max-h-[5em] font-bold">Fashion
+        &
+        Essentials
+    </h4>
 
     <div class="flex justify-center items-center w-[100%] h-[auto] ">
         <img src="https://i.ibb.co/0qys1fp/fs1.jpg" alt="fs1" class="w-[20%] h-auto">
@@ -566,11 +532,9 @@
 
     <!-- Explore More -->
 
-    <div class="explore-more">
-        <h4 class="uppercase text-[#3e4152] tracking-[.15em] text-[1.8em] my-12 mx-[70px] max-h-[5em] font-bold">Explore
-            More
-        </h4>
-    </div>
+    <h4 class="uppercase text-[#3e4152] tracking-[.15em] text-[1.8em] my-12 mx-[70px] max-h-[5em] font-bold">Explore
+        More
+    </h4>
 
     <div class="flex flex-wrap justify-center items-center w-[100%] h-[auto]">
         <img src="https://i.ibb.co/n815Cd0/em1.jpg" alt="em1" class="w-[50%] h-auto">
@@ -583,11 +547,9 @@
 
     <!-- The Kids Space -->
 
-    <div class="kid-space">
-        <h4 class="uppercase text-[#3e4152] tracking-[.15em] text-[1.8em] my-12 mx-[70px] max-h-[5em] font-bold">The
-            Kids Space
-        </h4>
-    </div>
+    <h4 class="uppercase text-[#3e4152] tracking-[.15em] text-[1.8em] my-12 mx-[70px] max-h-[5em] font-bold">The
+        Kids Space
+    </h4>
 
     <div class="flex flex-wrap justify-center items-center w-[100%] h-[auto]">
         <img src="https://i.ibb.co/n0Nq5h4/tks1.jpg" alt="tks1" class="w-[50%] h-auto">
@@ -596,27 +558,37 @@
 
     <!-- Budget Buy -->
 
-
-    <div class="Budget-Buy">
-        <h4 class="uppercase text-[#3e4152] tracking-[.15em] text-[1.8em] my-12 mx-[70px] max-h-[5em] font-bold">Budget
-            Buy
-        </h4>
-    </div>
-
-
+    <h4 class="uppercase text-[#3e4152] tracking-[.15em] text-[1.8em] my-12 mx-[70px] max-h-[5em] font-bold">Budget
+        Buy
+    </h4>
 
     <div class="flex flex-wrap justify-center items-center w-[100%] h-[auto]">
-
+        <img src="https://i.ibb.co/VWSrSZH/bb1.jpg" alt="bb1" class="w-[16.66%] h-auto">
+        <img src="https://i.ibb.co/VSHtd8F/bb2.jpg" alt="bb2" class="w-[16.66%] h-auto">
+        <img src="https://i.ibb.co/MkpbF46/bb3.jpg" alt="bb3" class="w-[16.66%] h-auto">
+        <img src="https://i.ibb.co/ZdMQJRC/bb4.jpg" alt="bb4" class="w-[16.66%] h-auto">
+        <img src="https://i.ibb.co/v4TyqCw/bb5.jpg" alt="bb5" class="w-[16.66%] h-auto">
+        <img src="https://i.ibb.co/Vp3KF0t/bb6.jpg" alt="bb6" class="w-[16.66%] h-auto">
 
     </div>
 
+    <!-- Shop More Brands -->
 
+    <h4 class="uppercase text-[#3e4152] tracking-[.15em] text-[1.8em] my-12 mx-[70px] max-h-[5em] font-bold">Shop
+        More Brands
+    </h4>
+
+    <div class="flex flex-wrap justify-center items-center w-[100%] h-[auto]">
+        <img src="https://i.ibb.co/Db4RdYW/mrb1.jpg" alt="mrb1" class="w-[20%] h-auto">
+        <img src="https://i.ibb.co/4PQB7kK/mrb2.jpg" alt="mrb2" class="w-[20%] h-auto">
+        <img src="https://i.ibb.co/7jCGbzH/mrb3.jpg" alt="mrb3" class="w-[20%] h-auto">
+        <img src="https://i.ibb.co/SN7z59H/mrb4.jpg" alt="mrb4" class="w-[20%] h-auto">
+        <img src="https://i.ibb.co/vYCbJWF/mrb5.jpg" alt="mrb5" class="w-[20%] h-auto">
+    </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
 <script src="../script/script.js"></script>
-
 </html>
 
 
