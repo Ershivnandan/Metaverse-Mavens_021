@@ -3,31 +3,52 @@ const item = document.getElementById("hoverContent");
 
 function showDropdown(category) {
   let dropdownContent;
+  let dropdownWidth;
+  let translateValue;
 
   switch (category) {
     case "Men":
       dropdownContent = mensDropdown;
+      dropdownWidth = "w-[70rem]";
+      translateValue = "-translate-x-[5rem]";
       break;
     case "Women":
       dropdownContent = womensDropdown;
+      dropdownWidth = "w-[70rem]";
+      translateValue = "-translate-x-[5rem]";
       break;
     case "Kids":
       dropdownContent = kidsDropdown;
+      dropdownWidth = "w-[70rem]";
+      translateValue = "-translate-x-[5rem]";
       break;
     case "Home & Living":
       dropdownContent = homeLivingDropdown;
+      dropdownWidth = "w-[70rem]";
+      translateValue = "-translate-x-[5rem]";
       break;
     case "Beauty":
       dropdownContent = beautyDropdown;
+      dropdownWidth = "w-[70rem]";
+      translateValue = "-translate-x-[5rem]";
       break;
     case "Studio":
       dropdownContent = studioDropdown;
+      dropdownWidth = "w-[30rem]";
+      translateValue = "translate-x-[10rem]";
       break;
     default:
       return;
   }
 
   item.innerHTML = `${dropdownContent}`;
+
+  dropdown.classList.remove("w-[70rem]", "w-[30rem]");
+  dropdown.classList.add(dropdownWidth);
+
+  dropdown.classList.remove("-translate-x-[5rem]", "translate-x-[10rem]");
+  dropdown.classList.add(translateValue);
+
   dropdown.classList.remove("hidden");
   dropdown.classList.add("opacity-100", "translate-y-1");
 }
@@ -424,6 +445,22 @@ const beautyDropdown = `<div class="beauty-dropdown">
   </ul>
 </div>`;
 
+const studioDropdown = `
+  <div class="text-center text-[#2c3042]">
+      <div class="flex justify-center px-2 py-2">
+        <img class="w-44" src="https://i.ibb.co/xMp3F4F/studio-logo-new.png" alt="studio-logo-new" >
+      </div>
+      <p class="font-normal text-sm pb-3">Your daily inspiration for everything fashion</p>
+      <img src="https://i.ibb.co/kqQCycQ/sudio-nav-banner.png" alt="sudio-nav-banner">
+       <div class="group flex justify-center items-center gap-2 my-2">
+          <button class="flex items-center transition-transform duration-300 ease-in-out  py-1 px-2">
+            explore studio
+            <img class="w-4 transform transition-transform duration-300 ease-in-out group-hover:translate-x-2" src="https://img.icons8.com/?size=100&id=60671&format=png&color=000000" alt="arrow">
+          </button>
+        </div>
+    </div>
+`;
+
 // Open and close side drawer
 
 const hamburger = document.querySelector(".hamburger");
@@ -453,34 +490,32 @@ drawer.addEventListener("touchend", function (e) {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const dropdownButtons = document.querySelectorAll('[data-collapse-toggle]');
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownButtons = document.querySelectorAll("[data-collapse-toggle]");
 
-  dropdownButtons.forEach(button => {
-    button.addEventListener('click', function () {
-      const dropdownId = button.getAttribute('aria-controls');
+  dropdownButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const dropdownId = button.getAttribute("aria-controls");
       const dropdown = document.getElementById(dropdownId);
-      dropdown.classList.toggle('hidden');
+      dropdown.classList.toggle("hidden");
     });
   });
 });
 
-
 function handleProfileDropdown(isHover) {
-  const dropdown2 = document.getElementById('hoverDropdown2');
-  
+  const dropdown2 = document.getElementById("hoverDropdown2");
+
   if (isHover) {
-    dropdown2.classList.remove('hidden');
-    dropdown2.classList.remove('opacity-0');
-    dropdown2.classList.add('block'); 
+    dropdown2.classList.remove("hidden");
+    dropdown2.classList.remove("opacity-0");
+    dropdown2.classList.add("block");
     setTimeout(() => {
-      dropdown2.classList.remove('opacity-0');
-    }, 0); 
+      dropdown2.classList.remove("opacity-0");
+    }, 0);
   } else {
-    dropdown2.classList.add('opacity-0');
+    dropdown2.classList.add("opacity-0");
     setTimeout(() => {
-      dropdown2.classList.add('hidden');
+      dropdown2.classList.add("hidden");
     }, 300);
   }
 }
-
