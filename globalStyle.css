@@ -60,3 +60,7 @@ body {
 #content {
   padding: 20px;
 }
+
+#hoverDropdown2 {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
