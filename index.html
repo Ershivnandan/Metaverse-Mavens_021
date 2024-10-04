@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra</title>
+    <title>
+      Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra
+    </title>
     <link rel="icon" href="myntra.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="globalStyle.css" />
-    <link rel="stylesheet" href="styles/men.css">
+    <link rel="stylesheet" href="styles/men.css" />
 
     <!-- Google Fonts  -->
 
@@ -28,7 +30,7 @@
     <!-- Navbar Style  -->
   </head>
   <body>
-    <!-- Navigation bar  -->
+    <!-- Navbar component  -->
     <div>
       <nav class="bg-white border-none shadow-md">
         <div class="container mx-auto px-4 py-3">
@@ -44,7 +46,7 @@
                   alt=""
                 />
               </div>
-              <!-- Logo Section -->
+
               <a href="#" class="flex items-center">
                 <img
                   src="https://i.ibb.co/wMFzc1M/myntra.webp"
@@ -54,83 +56,86 @@
               </a>
             </div>
 
-            <!-- Main Navigation -->
             <div class="hidden xl:block">
               <div class="flex space-x-8 text-[14px] font-semibold relative">
-                <!-- Men Menu Item -->
                 <div
                   class="group relative border-b-4 border-transparent hover:border-[#ee5f73] pt-4 pb-3 transition-all duration-300"
                   onmouseover="showDropdown('Men')"
                   onmouseout="hideDropdown()"
                 >
-                  <a href="./pages/men.html" class="uppercase text-[#2c3042]"
-                    >Men</a
-                  >
+                  <a href="../pages/men.html" class="uppercase text-[#2c3042]">
+                    Men
+                  </a>
                 </div>
 
-                <!-- Women Menu Item -->
                 <div
                   class="group relative border-b-4 border-transparent hover:border-[#fb56c1] pt-4 pb-3 transition-all duration-300"
                   onmouseover="showDropdown('Women')"
                   onmouseout="hideDropdown()"
                 >
-                  <a href="./pages/women.html" class="uppercase text-[#2c3042]"
-                    >Women</a
+                  <a
+                    href="../pages/women.html"
+                    class="uppercase text-[#2c3042]"
                   >
+                    Women
+                  </a>
                 </div>
 
-                <!-- Kids Menu Item -->
                 <div
                   class="group relative border-b-4 border-transparent hover:border-[#f26a10] pt-4 pb-3 transition-all duration-300"
                   onmouseover="showDropdown('Kids')"
                   onmouseout="hideDropdown()"
                 >
                   <a
-                    href="./pages/kidsSection.html"
+                    href="../pages/kidsSection.html"
                     class="uppercase text-[#2c3042]"
-                    >Kids</a
                   >
+                    Kids
+                  </a>
                 </div>
 
-                <!-- Home & Living Menu Item -->
                 <div
                   class="group relative border-b-4 border-transparent hover:border-[#f2c210] pt-4 pb-3 transition-all duration-300"
                   onmouseover="showDropdown('Home & Living')"
                   onmouseout="hideDropdown()"
                 >
                   <a
-                    href="./pages/homeLiving.html"
+                    href="../pages/homeLiving.html"
                     class="uppercase text-[#2c3042]"
-                    >Home & Living</a
                   >
+                    Home & Living
+                  </a>
                 </div>
 
-                <!-- Beauty Menu Item -->
                 <div
                   class="group relative border-b-4 border-transparent hover:border-[#0db7af] pt-4 pb-3 transition-all duration-300"
                   onmouseover="showDropdown('Beauty')"
                   onmouseout="hideDropdown()"
                 >
-                  <a href="./pages/beauty.html" class="uppercase text-[#2c3042]"
-                    >Beauty</a
+                  <a
+                    href="../pages/beauty.html"
+                    class="uppercase text-[#2c3042]"
                   >
+                    Beauty
+                  </a>
                 </div>
 
-                <!-- Studio Menu Item -->
                 <div
                   class="group relative border-b-4 border-transparent hover:border-[#ff3f6c] pt-4 pb-3 transition-all duration-300"
                   onmouseover="showDropdown('Studio')"
                   onmouseout="hideDropdown()"
                 >
-                  <a href="./pages/studio.html" class="uppercase text-[#2c3042]"
-                    >Studio <sup class="text-pink-500">New</sup></a
+                  <a
+                    href="../pages/studio.html"
+                    class="uppercase text-[#2c3042]"
                   >
+                    Studio <sup class="text-pink-500">New</sup>
+                  </a>
                 </div>
 
-                <!-- Hover Item (centered and shared for all items) -->
                 <div
                   id="hoverDropdown"
-                  class="absolute bg-white-900 hidden shadow-[inset 0 0 8px rgba(0, 0, 0, 1)] w-[70rem] h-[20rem] bg-white shadow-lg top-full left-0 right-0 transform -translate-x-[5rem] my-0 mx-auto transition-all duration-300 ease-in-out opacity-0"
+                  class="absolute z-20 bg-white-900 hidden shadow-[inset 0 0 8px rgba(0, 0, 0, 1)] w-[70rem] h-[20rem] bg-white shadow-lg top-full left-0 right-0 transform -translate-x-[5rem] my-0 mx-auto transition-all duration-300 ease-in-out opacity-0"
                 >
                   <div class="p-4 bg-white">
                     <div id="hoverContent">Hover Content</div>
@@ -139,7 +144,6 @@
               </div>
             </div>
 
-            <!-- Search Bar & Icons -->
             <div class="flex items-center gap-8">
               <div
                 class="relative lg:flex hidden items-center bg-gray-100 rounded-full"
@@ -156,9 +160,11 @@
                 />
               </div>
 
-              <!-- Profile, Wishlist, Bag Icons -->
-              <div class="flex items-center gap-6">
-                <div class="flex flex-col items-center cursor-pointer">
+              <div class="flex items-center gap-6 relative">
+                <div
+                  class="flex flex-col items-center cursor-pointer border-b-4 border-transparent hover:border-[#ff3f6c]"
+                  onmouseenter="handleProfileDropdown(true)"
+                >
                   <img
                     src="https://img.icons8.com/?size=100&id=23264&format=png&color=000000"
                     class="w-5 hidden lg:block xl:block"
@@ -181,7 +187,9 @@
                   </div>
                   <span class="text-xs hidden lg:block xl:block">Profile</span>
                 </div>
-                <div class="flex flex-col items-center cursor-pointer">
+                <div
+                  class="flex flex-col items-center cursor-pointer border-b-4 border-transparent"
+                >
                   <img
                     src="https://img.icons8.com/?size=100&id=87&format=png&color=000000"
                     class="w-5"
@@ -189,7 +197,9 @@
                   />
                   <span class="text-xs hidden lg:block xl:block">Wishlist</span>
                 </div>
-                <div class="flex flex-col items-center cursor-pointer">
+                <div
+                  class="flex flex-col items-center cursor-pointer border-b-4 border-transparent"
+                >
                   <img
                     src="https://img.icons8.com/?size=100&id=VksxHreSn4ck&format=png&color=000000"
                     class="w-5"
@@ -197,13 +207,94 @@
                   />
                   <span class="text-xs hidden lg:block xl:block">Bag</span>
                 </div>
+
+                <div
+                  id="hoverDropdown2"
+                  onmouseleave="handleProfileDropdown(false)"
+                  class="absolute bg-white-900 p-2 transform [inset 0 0 8px rgba(0, 0, 0, 1)] w-[18rem] h-[20rem] bg-white shadow-lg top-full right-0 my-0 transition-all duration-300 ease-in-out opacity-0"
+                >
+                  <div class="p-4 bg-white text-center">
+                    <div id="hoverContent2 text-center">
+                      <ul class="list-none">
+                        <li class="list-none">
+                          <p
+                            class="font-bold text-xs text-black text-start px-2 pb"
+                          >
+                            Welcome
+                          </p>
+                          <p
+                            class="text-[0.65rem] text-[#535766] font-semibold text-start ps-2 text-nowrap"
+                          >
+                            To access account and manage orders
+                          </p>
+                        </li>
+                        <li
+                          class="list-none items-start text-xs font-semibold flex px-2 py-1"
+                        >
+                          <button
+                            class="uppercase p-2 text-red-700 border border-transparent hover:border-[#ee5f73]"
+                          >
+                            Login / singup
+                          </button>
+                        </li>
+
+                        <li
+                          class="list-none items-start text-[#535766] text-xs font-normal flex px-2 py-1"
+                        >
+                          <ul class="text-start leading-5">
+                            <li class="hover:font-semibold cursor-pointer">
+                              Orders
+                            </li>
+                            <li class="hover:font-semibold cursor-pointer">
+                              Wishlist
+                            </li>
+                            <li class="hover:font-semibold cursor-pointer">
+                              Gift Cards
+                            </li>
+                            <li class="hover:font-semibold cursor-pointer">
+                              Contact Us
+                            </li>
+                            <li class="hover:font-semibold cursor-pointer">
+                              <span>Myntra Insider</span>
+                              <span
+                                class="text-white bg-[#ff3f6c] border border-[#ff3f6c] font-black px-[5px] py-0 text-[10px] -skew-x-10 rounded-[2px] m-[6px_0_-10px_10px] h-[7px] w-[25px]"
+                              >
+                                New
+                              </span>
+                            </li>
+                          </ul>
+                        </li>
+                        <li
+                          class="list-none items-start text-[#535766] text-xs font-normal flex px-2 py-1"
+                        >
+                          <ul class="text-start leading-5">
+                            <li class="hover:font-semibold cursor-pointer">
+                              Myntra Credit
+                            </li>
+                            <li class="hover:font-semibold cursor-pointer">
+                              Coupons
+                            </li>
+                            <li class="hover:font-semibold cursor-pointer">
+                              Saved Cards
+                            </li>
+                            <li class="hover:font-semibold cursor-pointer">
+                              Saved VPA
+                            </li>
+                            <li class="hover:font-semibold cursor-pointer">
+                              Saved Addressess
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </nav>
 
-      <!-- Side Drawer -->
       <div
         id="drawer-navigation"
         class="fixed inset-y-0 top-0 left-0 w-9/12 h-screen bg-white shadow-lg transition-transform transform -translate-x-full"
@@ -224,8 +315,9 @@
               >
                 <span
                   class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
-                  >Men's</span
                 >
+                  Men's
+                </span>
               </button>
 
               <ul id="sliderDropdown" class="hidden py-2 space-y-2">
@@ -233,99 +325,113 @@
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Topwear</a
                   >
+                    Topwear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Indian & Festive Wear</a
                   >
+                    Indian & Festive Wear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Bottomwear</a
                   >
+                    Bottomwear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Innerwear & Sleepwear</a
                   >
+                    Innerwear & Sleepwear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Plus Size</a
                   >
+                    Plus Size
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Footwear</a
                   >
+                    Footwear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Personal Care & Grooming</a
                   >
+                    Personal Care & Grooming
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Sunglasses & Frames</a
                   >
+                    Sunglasses & Frames
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Watches</a
                   >
+                    Watches
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Sports & Active Wear</a
                   >
+                    Sports & Active Wear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Gadgets</a
                   >
+                    Gadgets
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Fashion Accessories</a
                   >
+                    Fashion Accessories
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Bags & Backpacks</a
                   >
+                    Bags & Backpacks
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Luggages & Trolleys</a
                   >
+                    Luggages & Trolleys
+                  </a>
                 </li>
               </ul>
             </li>
@@ -340,8 +446,9 @@
               >
                 <span
                   class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
-                  >Women's</span
                 >
+                  Women's
+                </span>
               </button>
 
               <ul id="womenDropdown" class="hidden py-2 space-y-2">
@@ -349,99 +456,113 @@
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Topwear</a
                   >
+                    Topwear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Indian & Festive Wear</a
                   >
+                    Indian & Festive Wear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Bottomwear</a
                   >
+                    Bottomwear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Innerwear & Sleepwear</a
                   >
+                    Innerwear & Sleepwear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Plus Size</a
                   >
+                    Plus Size
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Footwear</a
                   >
+                    Footwear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Personal Care & Grooming</a
                   >
+                    Personal Care & Grooming
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Sunglasses & Frames</a
                   >
+                    Sunglasses & Frames
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Watches</a
                   >
+                    Watches
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Sports & Active Wear</a
                   >
+                    Sports & Active Wear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Gadgets</a
                   >
+                    Gadgets
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Fashion Accessories</a
                   >
+                    Fashion Accessories
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Bags & Backpacks</a
                   >
+                    Bags & Backpacks
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Luggages & Trolleys</a
                   >
+                    Luggages & Trolleys
+                  </a>
                 </li>
               </ul>
             </li>
@@ -456,8 +577,9 @@
               >
                 <span
                   class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
-                  >Kids</span
                 >
+                  Kids
+                </span>
               </button>
 
               <ul id="kidsDropdown" class="hidden py-2 space-y-2">
@@ -465,36 +587,41 @@
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Topwear</a
                   >
+                    Topwear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Bottomwear</a
                   >
+                    Bottomwear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Kids' Footwear</a
                   >
+                    Kids' Footwear
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Toys & Games</a
                   >
+                    Toys & Games
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >School Supplies</a
                   >
+                    School Supplies
+                  </a>
                 </li>
               </ul>
             </li>
@@ -509,8 +636,11 @@
               >
                 <span
                   class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
-                  >Home Living</span
+
+                  ><a href="./pages/homeLiving.html">Home Living</a></span
                 >
+                  Home Living
+                </span>
               </button>
 
               <ul id="homeLivingDropdown" class="hidden py-2 space-y-2">
@@ -518,36 +648,41 @@
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Furniture</a
                   >
+                    Furniture
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Decor</a
                   >
+                    Decor
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Bedding</a
                   >
+                    Bedding
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Kitchenware</a
                   >
+                    Kitchenware
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Storage & Organization</a
                   >
+                    Storage & Organization
+                  </a>
                 </li>
               </ul>
             </li>
@@ -562,8 +697,9 @@
               >
                 <span
                   class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
-                  >Beauty</span
                 >
+                  Beauty
+                </span>
               </button>
 
               <ul id="beautyDropdown" class="hidden py-2 space-y-2">
@@ -571,36 +707,41 @@
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Skincare</a
                   >
+                    Skincare
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Makeup</a
                   >
+                    Makeup
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Fragrances</a
                   >
+                    Fragrances
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Hair Care</a
                   >
+                    Hair Care
+                  </a>
                 </li>
                 <li>
                   <a
                     href="#"
                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                    >Bath & Body</a
                   >
+                    Bath & Body
+                  </a>
                 </li>
               </ul>
             </li>
@@ -618,111 +759,217 @@
 
     <!-- Men's Page  -->
     <div class="container men">
-      <!-- side slider -->
-       
-  
-  
       <!-- first -->
       <div class="header">
-          <img src="https://i.ibb.co/nqy2Bhb/men2.webp" alt="Men's fashion image 2">
+        <img
+          src="https://i.ibb.co/nqy2Bhb/men2.webp"
+          alt="Men's fashion image 2"
+        />
       </div>
-  
+
       <!-- second -->
       <div class="main-content">
-          <img src="https://i.ibb.co/89TRy6F/men1.webp" alt="Men's fashion image 1">
+        <img
+          src="https://i.ibb.co/89TRy6F/men1.webp"
+          alt="Men's fashion image 1"
+        />
       </div>
-  
+
       <!-- third -->
       <div class="offer">
-          <img src="https://i.ibb.co/41K9GYP/men11.webp" alt="men11" border="0">
-          <img src="https://i.ibb.co/MNZ8S48/men11.webp" alt="men11" border="0">
-          <img src="https://i.ibb.co/1s9dTwj/men7.webp" alt="men7" border="0">
-          <img src="https://i.ibb.co/fN0SQmq/men4.webp" alt="men4" border="0">
-          <img src="https://i.ibb.co/L0w7P0j/men3.webp" alt="men3" border="0">
-          <img src="https://i.ibb.co/NYstf3T/men9.webp" alt="men9" border="0">
-          
+        <img src="https://i.ibb.co/41K9GYP/men11.webp" alt="men11" border="0" />
+        <img src="https://i.ibb.co/MNZ8S48/men11.webp" alt="men11" border="0" />
+        <img src="https://i.ibb.co/1s9dTwj/men7.webp" alt="men7" border="0" />
+        <img src="https://i.ibb.co/fN0SQmq/men4.webp" alt="men4" border="0" />
+        <img src="https://i.ibb.co/L0w7P0j/men3.webp" alt="men3" border="0" />
+        <img src="https://i.ibb.co/NYstf3T/men9.webp" alt="men9" border="0" />
       </div>
-  
+
       <!-- fourth -->
-       <div class="coupon-corner">
-          <img src="https://i.ibb.co/r7y4TbW/men5.webp" alt="men5" border="0">
-       </div>
-  
-       <!-- fifth -->
-        <div class="flat-of">
-          <div class="of100">
-              <img src="https://i.ibb.co/ByQ4xxr/100off.webp" alt="100off" border="0">
-          </div>
-          <div class="of100">
-              <img src="https://i.ibb.co/bmDFZkd/200off.webp" alt="200off" border="0">
-          </div>
+      <div class="coupon-corner">
+        <img src="https://i.ibb.co/r7y4TbW/men5.webp" alt="men5" border="0" />
+      </div>
+
+      <!-- fifth -->
+      <div class="flat-of">
+        <div class="of100">
+          <img
+            src="https://i.ibb.co/ByQ4xxr/100off.webp"
+            alt="100off"
+            border="0"
+          />
         </div>
+        <div class="of100">
+          <img
+            src="https://i.ibb.co/bmDFZkd/200off.webp"
+            alt="200off"
+            border="0"
+          />
+        </div>
+      </div>
       <!-- sixth -->
-       <dv class="omg-deal">
-          <img src="https://i.ibb.co/NLYRSJ7/OMG-Deals.webp" alt="OMG-Deals" border="0">
-       </dv>
-  </div>
-  <!-- slider -->
-  <div class="slider-container">
+      <dv class="omg-deal">
+        <img
+          src="https://i.ibb.co/NLYRSJ7/OMG-Deals.webp"
+          alt="OMG-Deals"
+          border="0"
+        />
+      </dv>
+    </div>
+
+    <!-- slider -->
+    <div class="slider-container">
       <div class="slider">
-          <!-- Slides will be dynamically added here -->
+        <!-- Slides will be dynamically added here -->
       </div>
       <div class="dots">
-          <!-- Dots will be dynamically added here -->
+        <!-- Dots will be dynamically added here -->
       </div>
-  </div>
-  
-  </div>
-  <!-- category special -->
-   <div class="category-special">
-      <img src="https://i.ibb.co/pyzK0Lm/category-special.webp" alt="category-special" border="0">
-   </div>
-   
-  <!-- cards -->
-   <div class="card">
-      <div class="car"><img src="https://i.ibb.co/P4MVfXS/card-3.webp" alt="card-3" border="0"></div>
-      <div class="car"><img src="https://i.ibb.co/gv2sczn/card-5.webp" alt="card-5" border="0"></div>
-      <div class="car"><img src="https://i.ibb.co/KXZQ8Z1/card-7.webp" alt="card-7" border="0"></div>
-      <div class="car"><img src="https://i.ibb.co/DRk388v/card-14.webp" alt="card-14" border="0"></div>   
-      <div class="car"><img src="https://i.ibb.co/fdP8qbB/card-11.webp" alt="card-11" border="0"></div>
-  
-   </div>
-  
-   <div class="card">
-      <div class="car"><img src="https://i.ibb.co/5680H33/card-12.webp" alt="card-12" border="0"></div>
-      <div class="car"><img src="https://i.ibb.co/Bzfk1vj/card-13.webp" alt="card-13" border="0"></div>
-      <div class="car"><img src="https://i.ibb.co/0DT7xQT/card-8.webp" alt="card-8" border="0"></div>
-      <div class="car"><img src="https://i.ibb.co/VpNGY7C/card-1.webp" alt="card-1" border="0"></div>
-      <div class="car"><img src="https://i.ibb.co/5FStL7R/card-4.webp" alt="card-4" border="0"></div>
-      <div class="car"><img src="https://i.ibb.co/7z2JRnp/card-10.webp" alt="card-10" border="0"></div>
-  
-   </div>
-  
-   <div class="card card-last"> 
-      <div class="car"><img src="https://i.ibb.co/hWP97r4/card-16.webp" alt="card-16" border="0"></div>
-      <div class="car"><img src="https://i.ibb.co/JCdLxZ4/card-17.webp" alt="card-17" border="0"></div>
-      <div class="car"><img src="https://i.ibb.co/S7k6sk4/card-2.webp" alt="card-2" border="0"></div>
-      <div class="car"><img src="https://i.ibb.co/5K1jcRq/card-9.webp" alt="card-9" border="0"></div>
-  
-   </div>
-  
-   <!-- more knockout offers -->
-  <div class="knock">
-      <img src="https://i.ibb.co/LhN20Kt/more-knock.webp" alt="more-knock" border="0">
-  </div>
-  
-  
-  </div>
-  </div>
+    </div>
+
+    <div>
+      <!-- category special -->
+      <div class="category-special">
+        <img
+          src="https://i.ibb.co/pyzK0Lm/category-special.webp"
+          alt="category-special"
+          border="0"
+        />
+      </div>
+
+      <!-- cards -->
+      <div class="card">
+        <div class="car">
+          <img
+            src="https://i.ibb.co/P4MVfXS/card-3.webp"
+            alt="card-3"
+            border="0"
+          />
+        </div>
+        <div class="car">
+          <img
+            src="https://i.ibb.co/gv2sczn/card-5.webp"
+            alt="card-5"
+            border="0"
+          />
+        </div>
+        <div class="car">
+          <img
+            src="https://i.ibb.co/KXZQ8Z1/card-7.webp"
+            alt="card-7"
+            border="0"
+          />
+        </div>
+        <div class="car">
+          <img
+            src="https://i.ibb.co/DRk388v/card-14.webp"
+            alt="card-14"
+            border="0"
+          />
+        </div>
+        <div class="car">
+          <img
+            src="https://i.ibb.co/fdP8qbB/card-11.webp"
+            alt="card-11"
+            border="0"
+          />
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="car">
+          <img
+            src="https://i.ibb.co/5680H33/card-12.webp"
+            alt="card-12"
+            border="0"
+          />
+        </div>
+        <div class="car">
+          <img
+            src="https://i.ibb.co/Bzfk1vj/card-13.webp"
+            alt="card-13"
+            border="0"
+          />
+        </div>
+        <div class="car">
+          <img
+            src="https://i.ibb.co/0DT7xQT/card-8.webp"
+            alt="card-8"
+            border="0"
+          />
+        </div>
+        <div class="car">
+          <img
+            src="https://i.ibb.co/VpNGY7C/card-1.webp"
+            alt="card-1"
+            border="0"
+          />
+        </div>
+        <div class="car">
+          <img
+            src="https://i.ibb.co/5FStL7R/card-4.webp"
+            alt="card-4"
+            border="0"
+          />
+        </div>
+        <div class="car">
+          <img
+            src="https://i.ibb.co/7z2JRnp/card-10.webp"
+            alt="card-10"
+            border="0"
+          />
+        </div>
+      </div>
+
+      <div class="card card-last">
+        <div class="car">
+          <img
+            src="https://i.ibb.co/hWP97r4/card-16.webp"
+            alt="card-16"
+            border="0"
+          />
+        </div>
+        <div class="car">
+          <img
+            src="https://i.ibb.co/JCdLxZ4/card-17.webp"
+            alt="card-17"
+            border="0"
+          />
+        </div>
+        <div class="car">
+          <img
+            src="https://i.ibb.co/S7k6sk4/card-2.webp"
+            alt="card-2"
+            border="0"
+          />
+        </div>
+        <div class="car">
+          <img
+            src="https://i.ibb.co/5K1jcRq/card-9.webp"
+            alt="card-9"
+            border="0"
+          />
+        </div>
+      </div>
+
+      <!-- more knockout offers -->
+      <div class="knock">
+        <img
+          src="https://i.ibb.co/LhN20Kt/more-knock.webp"
+          alt="more-knock"
+          border="0"
+        />
+      </div>
+    </div>
     <!-- Men's Page  -->
   </body>
   <script src="./script/script.js"></script>
-  
-<script>
-  const slider = document.querySelector('.slider');
-  const dotsContainer = document.querySelector('.dots');
-  const slidesPerView = 4;
-  const slideImages = [
+
+  <script>
+    const slider = document.querySelector(".slider");
+    const dotsContainer = document.querySelector(".dots");
+    const slidesPerView = 4;
+    const slideImages = [
       "https://i.ibb.co/vPw0K9q/slider-1.webp",
       "https://i.ibb.co/4jpWTBT/slider-2.webp",
       "https://i.ibb.co/4Sf9tpV/slider-3.webp",
@@ -730,64 +977,67 @@
       "https://i.ibb.co/MBHY3pp/slider-5.webp",
       "https://i.ibb.co/6v6vxcB/slider-6.webp",
       "https://i.ibb.co/Sxxz87D/slider-7.webp",
-      "https://i.ibb.co/XYKy0hT/slider-8.webp"
-  ];
+      "https://i.ibb.co/XYKy0hT/slider-8.webp",
+    ];
 
-  let currentIndex = 0;
-  const slideCount = slideImages.length;
-  let autoSlideInterval;
+    let currentIndex = 0;
+    const slideCount = slideImages.length;
+    let autoSlideInterval;
 
-  // Create slides
-  for (let i = 0; i < slideCount + slidesPerView; i++) {
-      const slide = document.createElement('div');
-      slide.className = 'slide';
-      const img = document.createElement('img');
+    // Create slides
+    for (let i = 0; i < slideCount + slidesPerView; i++) {
+      const slide = document.createElement("div");
+      slide.className = "slide";
+      const img = document.createElement("img");
       img.src = slideImages[i % slideCount];
       img.alt = `slider-${(i % slideCount) + 1}`;
       slide.appendChild(img);
       slider.appendChild(slide);
-  }
+    }
 
-  // Create dots
-  for (let i = 0; i < Math.ceil(slideCount / slidesPerView); i++) {
-      const dot = document.createElement('span');
-      dot.className = 'dot';
-      dot.addEventListener('click', () => {
-          moveSlide(i * slidesPerView);
-          stopAutoSlide();
+    // Create dots
+    for (let i = 0; i < Math.ceil(slideCount / slidesPerView); i++) {
+      const dot = document.createElement("span");
+      dot.className = "dot";
+      dot.addEventListener("click", () => {
+        moveSlide(i * slidesPerView);
+        stopAutoSlide();
       });
       dotsContainer.appendChild(dot);
-  }
+    }
 
-  const dots = document.querySelectorAll('.dot');
-  const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll(".dot");
+    const slides = document.querySelectorAll(".slide");
 
-  function moveSlide(index) {
+    function moveSlide(index) {
       currentIndex = index;
       const translateValue = -(currentIndex * (100 / slidesPerView));
       slider.style.transform = `translateX(${translateValue}%)`;
       updateDots();
-  }
+    }
 
-  function updateDots() {
+    function updateDots() {
       dots.forEach((dot, index) => {
-          dot.classList.toggle('active', index === Math.floor(currentIndex / slidesPerView));
+        dot.classList.toggle(
+          "active",
+          index === Math.floor(currentIndex / slidesPerView)
+        );
       });
-  }
+    }
 
-  function startAutoSlide() {
+    function startAutoSlide() {
       stopAutoSlide();
       autoSlideInterval = setInterval(() => {
-          currentIndex = (currentIndex + 1) % slideCount;
-          moveSlide(currentIndex);
+        currentIndex = (currentIndex + 1) % slideCount;
+        moveSlide(currentIndex);
       }, 5000);
-  }
+    }
 
-  function stopAutoSlide() {
+    function stopAutoSlide() {
       clearInterval(autoSlideInterval);
-  }
+    }
 
-  updateDots();
-  startAutoSlide();
-</script>
+    updateDots();
+    startAutoSlide();
+  </script>
 </html>
