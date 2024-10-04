@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* third */
+.offer {
+    text-align: center;
+    display: flex;
+    height: 20px;
+    width: 90%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.offer img {
+    width: 16%;
+    height: 10px;
+}
+
+/* fourth */
+.coupon-corner {
+    width: 100%;
+}
+
+/* fifth */
+.flat-of {
+    display: flex;
+    justify-content: space-between;
+}
+
+.of100 {
+    width: 49%;
+}
+
+/* Media Queries for responsiveness */
+/* tablet */
+@media screen and (min-width: 640px) {
+    .offer img {
+        width: 16%;
+        height: 10px;
+    }
+}
+/* mobile */
+@media screen and (min-width: 1024px) {
+    .offer img {
+        width: 16%;
+        height: 16px;
+    }
+}
+
+/* slider */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 25%;
+    padding: 0 5px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/* category-special */
+.category-special {
+    width: 100%;
+}
+
+/* cards */
+.card {
+    display: flex;
+}
+
+.car {
+    width: 20%;
+}
+
+.card-last {
+    justify-content: center;
+    align-items: center;
+}
+
+/* more knockout offers */
+/* slider-side */
