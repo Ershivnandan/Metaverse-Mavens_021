@@ -12,3 +12,7 @@ input::placeholder {
     color: #a0aec0; 
     font-size: 14px;
 }
+
+#drawer-navigation{
+    z-index: 99;
+}
