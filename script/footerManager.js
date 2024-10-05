@@ -1,5 +1,12 @@
 class myntraFooter extends HTMLElement {
   connectedCallback() {
+    let currentPath = window.location.pathname;
+    
+
+    let isRoot = currentPath.endsWith("index.html") || currentPath === "/";
+
+    let prefix = isRoot ? "./" : "../";
+
     this.innerHTML = `
             <footer class="bg-gray-100 p-6 mt-10 hidden lg:block">
       <div
@@ -545,7 +552,7 @@ class myntraFooter extends HTMLElement {
       </div>
     </footer>
 
-    <!-- mobile navigation bar  -->
+     <!-- mobile navigation bar  -->
     <div
       class="fixed lg:hidden bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200"
     >
@@ -555,72 +562,56 @@ class myntraFooter extends HTMLElement {
           class="inline-flex flex-col items-center justify-center px-5 cursor-pointer"
           
         >
-        <a href="../index.html">
-
-          <img class="w-8 h-8" src="../myntra.png" alt="" />
-          <span
-            class="text-sm text-gray-500"
-            >Home</span
-          >
+        <a href="${prefix}index.html">
+          <img class="w-8 h-8" src="${prefix}myntra.png" alt="" />
+          <span class="text-sm text-gray-500">Home</span>
         </a>
         </button>
+        
         <button
           type="button"
           class="inline-flex flex-col items-center justify-center px-5 cursor-pointer"
           
         >
-        <a href="./pages/women.html">
-
+        <a href="${prefix}pages/women.html">
           <img
             class="w-8 h-8"
             src="https://i.ibb.co/prtwfFr/be5449fb-905f-41ee-8da9-da0246e03c5a1707389731258-Frame-32.webp"
             alt="be5449fb-905f-41ee-8da9-da0246e03c5a1707389731258-Frame-32"
           />
-
-          <span
-            class="text-sm text-gray-500"
-            >FWD</span
-          >
+          <span class="text-sm text-gray-500">FWD</span>
         </a>
         </button>
+        
         <button
           type="button"
           class="inline-flex flex-col items-center justify-center px-5 cursor-pointer"
           
         >
-        <a href="./pages/beauty.html">
-
+        <a href="${prefix}pages/beauty.html">
           <img
             class="w-8 h-8"
             src="https://i.ibb.co/Gx2CmF5/Tk-A4x-Aep-9f2bdfbc28cc434da3f653e3dc8bdae1.webp"
             alt="Tk-A4x-Aep-9f2bdfbc28cc434da3f653e3dc8bdae1"
           />
-
-          <span
-            class="text-sm text-gray-500"
-            >Beauty</span
-          >
+          <span class="text-sm text-gray-500">Beauty</span>
         </a>
         </button>
+        
         <button
           type="button"
           class="inline-flex flex-col items-center justify-center px-5 cursor-pointer"
           
         >
-        <a href="./pages/wishlist.html">
-
+        <a href="${prefix}pages/wishlist.html">
           <img
             class="w-8 h-8"
             src="https://i.ibb.co/vdLn9FW/cd445369-7bc7-4a26-96bd-dba3e17e94581707389731276-profile.webp"
-            alt="cd445369-7bc7-4a26-96bd-dba3e17e94581707389731276-profile"
+            alt="Profile"
           />
-
-          <span
-            class="text-sm text-gray-500"
-            >Profile</span
-          >
-        </button>
+          <span class="text-sm text-gray-500">Profile</span>
         </a>
+        </button>
       </div>
     </div>
         `;
