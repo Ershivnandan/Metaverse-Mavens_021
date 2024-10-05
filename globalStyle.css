@@ -6,7 +6,9 @@
   --background-color: #f2f2f2; /* Light gray background */
   --white-color: #ffffff;
   --black-color: #000000;
-  --border-color: #e0e0e0; /* Light gray for borders */
+  --border-color: #e0e0e0;
+  --black-border-color: #0000006b;
+  --short-color: #ff5722;
 
   /* Typography */
   --font-family: "Poppins", "Helvetica", "Arial", sans-serif;
