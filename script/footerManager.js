@@ -562,8 +562,8 @@ class myntraFooter extends HTMLElement {
           class="inline-flex flex-col items-center justify-center px-5 cursor-pointer"
           
         >
-        <a href="${prefix}index.html">
-          <img class="w-8 h-8" src="${prefix}myntra.png" alt="" />
+        <a class="flex flex-col items-center" href="${prefix}index.html">
+          <img class="w-5 h-5 md:w-8 md:h-8" src="${prefix}myntra.png" alt="" />
           <span class="text-sm text-gray-500">Home</span>
         </a>
         </button>
@@ -573,9 +573,9 @@ class myntraFooter extends HTMLElement {
           class="inline-flex flex-col items-center justify-center px-5 cursor-pointer"
           
         >
-        <a href="${prefix}pages/women.html">
+        <a class="flex flex-col items-center" href="${prefix}pages/women.html">
           <img
-            class="w-8 h-8"
+            class="w-5 h-5 md:w-8 md:h-8"
             src="https://i.ibb.co/prtwfFr/be5449fb-905f-41ee-8da9-da0246e03c5a1707389731258-Frame-32.webp"
             alt="be5449fb-905f-41ee-8da9-da0246e03c5a1707389731258-Frame-32"
           />
@@ -588,9 +588,9 @@ class myntraFooter extends HTMLElement {
           class="inline-flex flex-col items-center justify-center px-5 cursor-pointer"
           
         >
-        <a href="${prefix}pages/beauty.html">
+        <a class="flex flex-col items-center" href="${prefix}pages/beauty.html">
           <img
-            class="w-8 h-8"
+            class="w-5 h-5 md:w-8 md:h-8"
             src="https://i.ibb.co/Gx2CmF5/Tk-A4x-Aep-9f2bdfbc28cc434da3f653e3dc8bdae1.webp"
             alt="Tk-A4x-Aep-9f2bdfbc28cc434da3f653e3dc8bdae1"
           />
@@ -603,9 +603,9 @@ class myntraFooter extends HTMLElement {
           class="inline-flex flex-col items-center justify-center px-5 cursor-pointer"
           
         >
-        <a href="${prefix}pages/wishlist.html">
+        <a class="flex flex-col items-center" href="${prefix}pages/wishlist.html">
           <img
-            class="w-8 h-8"
+            class="w-5 h-5 md:w-8 md:h-8"
             src="https://i.ibb.co/vdLn9FW/cd445369-7bc7-4a26-96bd-dba3e17e94581707389731276-profile.webp"
             alt="Profile"
           />
