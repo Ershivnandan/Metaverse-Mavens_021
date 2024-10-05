@@ -1,5 +1,16 @@
 const dropdown = document.getElementById("hoverDropdown");
 const item = document.getElementById("hoverContent");
+let currentPage = "men"
+let previousPage = null
+
+function changePage(pageName){
+  previousPage = currentPage
+  currentPage = pageName
+}
+
+function backPreviousPage(){
+  console.log("called")
+}
 
 function showDropdown(category) {
   let dropdownContent;
