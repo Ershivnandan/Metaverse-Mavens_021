@@ -1,750 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myntra Women Section</title>
-    
-     <!-- Google Fonts  -->
-
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-     <link
-       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-       rel="stylesheet"
-     />
-     <!-- Google Fonts  -->
- 
-    <!-- Tailwind CSS CDN  -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind CSS CDN  -->
-
-    <link rel="stylesheet" href="../styles/navbar.css" />
-
+    <title>Evalution</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        header{
+            display: flex;
+            /* justify-content: space-between; */
         }
-
-        body {
-            font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+        nav{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            font-family: "Concert One", cursive;
+            display: flex;
+            align-content: flex-end;
+            /* margin: 8px;
+            padding: 5px; */
+            padding-left: 30px;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
+        nav li{
+            justify-content: space-between;
+            text-align: center;
+            margin: 8px;
+            padding: 5px;
+            margin-left: 30px;
+            /* padding-left: 30px; */
+        }
+        .enroll{
+            display: block;
+            border-radius: 20px;
+            align-items: end;
+            /* padding-left: 30px; */
+            font-family: "Concert One", cursive;
+        }
+        .welcome{
+            text-align: center;
+        }
+        .welcome h h2{
+            font-family: "Fredoka One", cursive;
+            display: inline;
+        }
+    
+            .parentchild{
+            display: flex;
+            flex-direction: column;
+                    }
+        .item{
+            margin: 10px;
+            padding: 10px;
+            border: 1px;
+            border-radius: 5px;
+            width: 200px;
+            display: flex;
+        }
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: flex;
+        }
+        .text{
+            font-size: 14px;
+        }
+        .classes{
+            text-align: center;
+        }
+        .classes h2{
+            font-family: "Concert One", cursive;
+            color: #423F8D;
+        }
+        .classes p{
+            font-family: "DM Sans", sans-serif;
+            color: #423F8D;
+        }
+        .parentclass{
+            display: flex;
+            margin: auto;
+            border-radius: 30px;
+        }
+        .box{
+            display: block;
+            align-items: center;
+            width: 100%;
+            margin: 20px;
             padding: 20px;
         }
-
-        .header {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        .main-content {
-            width: 100%;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* third */
-        .offer {
-            text-align: center;
+        .block{
             display: flex;
-            height: 20px;
             width: 90%;
-            margin-right: 5px;
-            margin-left: 5px;
+           padding: 20px;
+            
         }
-
-        .offer img {
-            width: 16%;
-            height: 10px;
-        }
-
-        /* fourth */
-        .coupon-corner {
-            width: 100%;
-        }
-
-        /* fifth */
-        .flat-of {
+        .instuctor{
             display: flex;
+            width: 23%;
+            padding: 50px;
+            margin: 10px;
+            border-radius: 30px;
             justify-content: space-between;
         }
-
-        .of100 {
-            width: 49%;
+        .instructor h3 p{
+            text-align: center;
         }
-
-        /* Media Queries for responsiveness */
-        /* tablet */
-        @media screen and (min-width: 640px) {
-            .offer img {
-                width: 16%;
-                height: 10px;
-            }
-        }
-
-        /* mobile */
-        @media screen and (min-width: 1024px) {
-            .offer img {
-                width: 16%;
-                height: 16px;
-            }
-        }
-
-        /* slider */
-        .slider-container {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .slide {
-            flex: 0 0 25%;
-            padding: 0 5px;
-        }
-
-        .slide img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .dots {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
-        }
-
-        .dot {
-            width: 12px;
-            height: 12px;
-            background-color: #bbb;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .dot.active {
-            background-color: #333;
-        }
-
-        /* category-special */
-        .category-special {
-            width: 100%;
-        }
-
-        /* cards */
-        .card {
+        footer{
+            background-color: #4255A4;
             display: flex;
         }
-
-        .car {
-            width: 20%;
+        .k1 p{
+            font-family: "DM Sans", sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            margin: 5px;
         }
-
-        .card-last {
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* more knockout offers */
-        /* slider-side */
     </style>
 </head>
-
 <body>
-
-
-    <!-- navbar -->
-    <div>
-        <nav class="bg-white border-none shadow-md">
-            <div class="container mx-auto px-4 py-3">
-                <div class="flex justify-between items-center">
-                    <div class="flex justify-center items-center gap-4">
-                        <div class="xl:hidden md:block sm:block hamburger w-[24px] h-[24px] cursor-pointer "
-                            id="hamburger">
-                            <img class="w-full h-full"
-                                src="https://img.icons8.com/?size=100&id=36389&format=png&color=000000" alt="" />
-                        </div>
-                        <!-- Logo Section -->
-                        <a href="#" class="flex items-center">
-                            <img src="https://i.ibb.co/wMFzc1M/myntra.webp" class="lg:h-14 h-10" alt="Myntra Logo" />
-                        </a>
-                    </div>
-
-                    <!-- Main Navigation -->
-                    <div class="hidden xl:block">
-                        <div class="flex space-x-8 text-[14px] font-semibold relative">
-                            <!-- Men Menu Item -->
-                            <div class="group relative border-b-4 border-transparent hover:border-[#ee5f73] pt-4 pb-3 transition-all duration-300"
-                                onmouseover="showDropdown('Men')" onmouseout="hideDropdown()">
-                                <a href="../index.html" class="uppercase text-[#2c3042]">Men</a>
-                            </div>
-
-                            <!-- Women Menu Item -->
-                            <div class="group relative border-b-4 border-transparent hover:border-[#fb56c1] pt-4 pb-3 transition-all duration-300"
-                                onmouseover="showDropdown('Women')" onmouseout="hideDropdown()">
-                                <a href="./women.html" class="uppercase text-[#2c3042]">Women</a>
-                            </div>
-
-                            <!-- Kids Menu Item -->
-                            <div class="group relative border-b-4 border-transparent hover:border-[#f26a10] pt-4 pb-3 transition-all duration-300"
-                                onmouseover="showDropdown('Kids')" onmouseout="hideDropdown()">
-                                <a href="./kidsSection.html" class="uppercase text-[#2c3042]">Kids</a>
-                            </div>
-
-                            <!-- Home & Living Menu Item -->
-                            <div class="group relative border-b-4 border-transparent hover:border-[#f2c210] pt-4 pb-3 transition-all duration-300"
-                                onmouseover="showDropdown('Home & Living')" onmouseout="hideDropdown()">
-                                <a href="./homeLiving.html" class="uppercase text-[#2c3042]">Home & Living</a>
-                            </div>
-
-                            <!-- Beauty Menu Item -->
-                            <div class="group relative border-b-4 border-transparent hover:border-[#0db7af] pt-4 pb-3 transition-all duration-300"
-                                onmouseover="showDropdown('Beauty')" onmouseout="hideDropdown()">
-                                <a href="./beauty.html" class="uppercase text-[#2c3042]">Beauty</a>
-                            </div>
-
-                            <!-- Studio Menu Item -->
-                            <div class="group relative border-b-4 border-transparent hover:border-[#ff3f6c] pt-4 pb-3 transition-all duration-300"
-                                onmouseover="showDropdown('Studio')" onmouseout="hideDropdown()">
-                                <a href="./studio.html" class="uppercase text-[#2c3042]">Studio <sup
-                                        class="text-pink-500">New</sup></a>
-                            </div>
-
-                            <!-- Hover Item (centered and shared for all items) -->
-                            <div id="hoverDropdown"
-                                class="absolute bg-white-900 hidden shadow-[inset 0 0 8px rgba(0, 0, 0, 1)] w-[70rem] h-[20rem] bg-white shadow-lg top-full left-0 right-0 transform -translate-x-[5rem] my-0 mx-auto transition-all duration-300 ease-in-out opacity-0">
-                                <div class="p-4 bg-white">
-                                    <div id="hoverContent">Hover Content</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Search Bar & Icons -->
-                    <div class="flex items-center gap-8">
-                        <div class="relative lg:flex hidden items-center bg-gray-100 rounded-full">
-                            <img src="https://img.icons8.com/?size=100&id=132&format=png&color=000000"
-                                class="w-5 h-5 ml-3" alt="Search Icon" />
-                            <input type="text" placeholder="Search for products, brands and more"
-                                class="bg-transparent px-4 py-2 w-[350px] text-sm focus:outline-none" />
-                        </div>
-
-                        <!-- Profile, Wishlist, Bag Icons -->
-                        <div class="flex items-center gap-6 relative">
-                            <div class="flex flex-col items-center cursor-pointer border-b-4 border-transparent hover:border-[#ff3f6c]"
-                                onmouseenter="handleProfileDropdown(true)" onmouseleave="handleProfileDropdown(false)">
-                                <img src="https://img.icons8.com/?size=100&id=23264&format=png&color=000000"
-                                    class="w-5 hidden lg:block xl:block" alt="Profile" />
-                                <div class="sm:block md:block lg:hidden xl:hidden">
-                                    <svg width="20px" height="20px" viewBox="0 0 16 18">
-                                        <g fill="none" fillrule="evenodd">
-                                            <path d="M-4-3h24v24H-4z"></path>
-                                            <g fill="#3E4152">
-                                                <path
-                                                    d="M3.23 1.3c-.788 0-1.43.61-1.43 1.359V15.34c0 .75.642 1.359 1.43 1.359h9.54c.788 0 1.43-.61 1.43-1.359V2.66c0-.75-.642-1.359-1.43-1.359H3.23zM13 18H3C1.621 18 .5 16.937.5 15.632V2.368C.5 1.063 1.621 0 3 0h10c1.379 0 2.5 1.063 2.5 2.368v13.264C15.5 16.937 14.379 18 13 18z">
-                                                </path>
-                                                <path
-                                                    d="M10.25 8.25h-1.5v-1.5a.75.75 0 00-1.5 0v1.5h-1.5a.75.75 0 000 1.5h1.5v1.5a.75.75 0 001.5 0v-1.5h1.5a.75.75 0 000-1.5">
-                                                </path>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <span class="text-xs hidden lg:block xl:block">Profile</span>
-                            </div>
-                            <div class="flex flex-col items-center cursor-pointer border-b-4 border-transparent">
-                                <img src="https://img.icons8.com/?size=100&id=87&format=png&color=000000" class="w-5"
-                                    alt="Wishlist" />
-                                <span class="text-xs hidden lg:block xl:block">Wishlist</span>
-                            </div>
-                            <div class="flex flex-col items-center cursor-pointer border-b-4 border-transparent">
-                                <img src="https://img.icons8.com/?size=100&id=VksxHreSn4ck&format=png&color=000000"
-                                    class="w-5" alt="Bag" />
-                                <span class="text-xs hidden lg:block xl:block">Bag</span>
-                            </div>
-
-                            <div id="hoverDropdown2"
-                                class="absolute bg-white-900 border border-red-900  transform [inset 0 0 8px rgba(0, 0, 0, 1)] w-[15rem] h-[20rem] bg-white shadow-lg top-full right-0 my-0  transition-all duration-300 ease-in-out opacity-0">
-                                <div class="p-4 bg-white text-center">
-                                    <div id="hoverContent2 text-center">Working on It</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <header>
+        <div>
+            <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/logo/logo.png" alt="kindergarten">
+        </div>
+        <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Class</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
         </nav>
-
-        <!-- Side Drawer -->
-        <div id="drawer-navigation"
-            class="fixed inset-y-0 top-0 left-0 w-9/12 h-screen bg-white shadow-lg transition-transform transform -translate-x-full">
-            <div>
-                <img src="https://i.ibb.co/twRQv26/9eec0b69-d6e0-49dd-8bb3-127dd6a8d68f1698648116571-Flat-500-2.webp"
-                    alt="9eec0b69-d6e0-49dd-8bb3-127dd6a8d68f1698648116571-Flat-500-2" />
-                <ul class="mt-4 space-y-2 text-black h-[80%] overflow-y-auto">
-                    <li>
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                            aria-controls="sliderDropdown" data-collapse-toggle="sliderDropdown" id="dropdownButton">
-                            <span
-                                class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Men's</span>
-                        </button>
-
-                        <ul id="sliderDropdown" class="hidden py-2 space-y-2">
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Topwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Indian
-                                    & Festive Wear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bottomwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Innerwear
-                                    & Sleepwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Plus
-                                    Size</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Footwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Personal
-                                    Care & Grooming</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Sunglasses
-                                    & Frames</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Watches</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Sports
-                                    & Active Wear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Gadgets</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Fashion
-                                    Accessories</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bags
-                                    & Backpacks</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Luggages
-                                    & Trolleys</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                            aria-controls="womenDropdown" data-collapse-toggle="womenDropdown" id="womenButton">
-                            <span
-                                class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Women's</span>
-                        </button>
-
-                        <ul id="womenDropdown" class="hidden py-2 space-y-2">
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Topwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Indian
-                                    & Festive Wear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bottomwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Innerwear
-                                    & Sleepwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Plus
-                                    Size</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Footwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Personal
-                                    Care & Grooming</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Sunglasses
-                                    & Frames</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Watches</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Sports
-                                    & Active Wear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Gadgets</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Fashion
-                                    Accessories</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bags
-                                    & Backpacks</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Luggages
-                                    & Trolleys</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                            aria-controls="kidsDropdown" data-collapse-toggle="kidsDropdown" id="kidsButton">
-                            <span
-                                class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Kids</span>
-                        </button>
-
-                        <ul id="kidsDropdown" class="hidden py-2 space-y-2">
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Topwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bottomwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Kids'
-                                    Footwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Toys
-                                    & Games</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">School
-                                    Supplies</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                            aria-controls="homeLivingDropdown" data-collapse-toggle="homeLivingDropdown"
-                            id="homeLivingButton">
-                            <span
-                                class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Home
-                                Living</span>
-                        </button>
-
-                        <ul id="homeLivingDropdown" class="hidden py-2 space-y-2">
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Furniture</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Decor</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bedding</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Kitchenware</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Storage
-                                    & Organization</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                            aria-controls="beautyDropdown" data-collapse-toggle="beautyDropdown" id="beautyButton">
-                            <span
-                                class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Beauty</span>
-                        </button>
-
-                        <ul id="beautyDropdown" class="hidden py-2 space-y-2">
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Skincare</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Makeup</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Fragrances</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Hair
-                                    Care</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bath
-                                    & Body</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="absolute bottom-0 w-full bg-white">
-                    <img class="w-full"
-                        src="https://i.ibb.co/YBBFrsJ/856cb741-8473-4d5e-b6e3-a52b3d98c99e1672386455977-PWA-App-Download-banner.png"
-                        alt="856cb741-8473-4d5e-b6e3-a52b3d98c99e1672386455977-PWA-App-Download-banner" />
+        <div class="enroll">
+            <p style="background-color: rgb(12, 202, 235); text-align: center;">Enroll Now</p>
+        </div>
+    </header>
+    <div class="parent">
+        <div class="welcome">
+            <h2 class="h">welcome to our <span style=" color: #ED078B;">kindergarten</span></h2>
+            <p>Our set he for firmament morning sixth subdue today the darkness creeping gathered divide our let god moving <br> today. Moving in fourth air night bring upon lesser subdue fowl male signs.</p>
+        </div>
+        <div class="parentchild">
+            <div class="item">
+                <div class="icon">
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/icon/about-icon1.svg" alt="">
                 </div>
+                <div class="text">
+                    <h2 style="color: rgb(54, 211, 219)">Inter School spaorts</h2>
+                    <br>
+                    The words you use in your written
+                    <br>
+                    communica speak volumes.
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/icon/about-icon2.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2 style="color: rgb(54, 211, 219)">Friendly Environment</h2>
+                        <br>
+                        The words you use in your written
+                        <br>
+                        communica speak volumes.
+                    </div>
+            </div>
+            <div class="item">
+                <div class="icon">
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/icon/about-icon3.svg" alt="">
+                </div>
+                <div class="text">
+                    <h2 style="color: rgb(54, 211, 219)">Multimedia Class</h2>
+                    <br>
+                    The words you use in your written
+                    <br>
+                    communica speak volumes.
+                </div>
+                <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/about2.png" alt="child">
             </div>
         </div>
-    </div>
-
-
-
-    <div class="container">
-        <!-- side slider -->
-
-
-
-        <!-- first -->
-        <div class="header">
-            <img src="https://i.ibb.co/nqy2Bhb/men2.webp" alt="Men's fashion image 2">
+    
+        <div class="classes">
+            <h2>Classes We Offer</h2>
+            <p>Our set he for firmament morning sixth subdue today the darkness creeping gathered <br>divide our let god moving today. Moving in fourth air night bring upon lesser subdue.</p>
         </div>
-
-        <!-- second -->
-        <div class="main-content">
-            <img src="https://i.ibb.co/6wt7hpR/wom-1.webp" alt="wom-1" border="0">
-        </div>
-
-        <!-- third -->
-        <div class="offer">
-            <img src="https://i.ibb.co/41K9GYP/men11.webp" alt="men11" border="0">
-            <img src="https://i.ibb.co/MNZ8S48/men11.webp" alt="men11" border="0">
-            <img src="https://i.ibb.co/1s9dTwj/men7.webp" alt="men7" border="0">
-            <img src="https://i.ibb.co/fN0SQmq/men4.webp" alt="men4" border="0">
-            <img src="https://i.ibb.co/L0w7P0j/men3.webp" alt="men3" border="0">
-            <img src="https://i.ibb.co/NYstf3T/men9.webp" alt="men9" border="0">
-
-        </div>
-
-        <!-- fourth -->
-        <div class="coupon-corner">
-            <img src="https://i.ibb.co/r7y4TbW/men5.webp" alt="men5" border="0">
-        </div>
-
-        <!-- fifth -->
-        <div class="flat-of">
-            <div class="of100">
-                <img src="https://i.ibb.co/ByQ4xxr/100off.webp" alt="100off" border="0">
+        <div class="parentclass">
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/class-img2.png" alt="1">
+                <h3 style="text-align: center;">Intellige Image</h3>
+                <p style="text-align: center;">The worlds you use in image <br> cumminic speaks volumes</p>
             </div>
-            <div class="of100">
-                <img src="https://i.ibb.co/bmDFZkd/200off.webp" alt="200off" border="0">
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/class-img3.png" alt="2">
+                <h3 style="text-align: center;">Intellige Image</h3>
+                <p style="text-align: center;">The worlds you use in image <br> cumminic speaks volumes</p>
+            </div>
+            <div class="box">
+                <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/class-img2.png" alt="3">
+                <h3 style="text-align: center;">Intellige Image</h3>
+                <p style="text-align: center;">The worlds you use in image <br> cumminic speaks volumes</p>
             </div>
         </div>
-        <!-- sixth -->
-        <dv class="omg-deal">
-            <img src="https://i.ibb.co/NLYRSJ7/OMG-Deals.webp" alt="OMG-Deals" border="0">
-        </dv>
-    </div>
-    <!-- slider -->
-    <div class="slider-container">
-        <div class="slider">
-            <!-- Slides will be dynamically added here -->
+        <div class="Expert">
+            <div class="classes">
+                <h2>Expert Teachers</h2>
+                <p>Our set he for firmament morning sixth subdue today the darkness creeping gathered <br>divide our let god moving today. Moving in fourth air night bring upon lesser subdue.</p>
+            </div>
+            <div class="block">
+                 <div class="instructor">
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/team3.png" alt="1">
+                    <h3 style="text-align: center;">Jackson Clay</h3>
+                    <p style="text-align: center;">Sport Instructor</p>
+                 </div>
+                 <div class="instructor">
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/team1.png" alt="2">
+                    <h3 style="text-align: center;">Jackson Clay</h3>
+                    <p style="text-align: center;">Sport Instructor</p>
+                 </div>
+                 <div class="instructor">
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/team2.png" alt="2">
+                    <h3 style="text-align: center;">Jackson Clay</h3>
+                    <p style="text-align: center;">Sport Instructor</p>
+                 </div>
+                 <div class="instructor">
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/team3.png" alt="2">
+                    <h3 style="text-align: center;">Buston Heyman</h3>
+                    <p style="text-align: center;">Sport Instructor</p>
+                 </div>
+            </div>
         </div>
-        <div class="dots">
-            <!-- Dots will be dynamically added here -->
-        </div>
+        <footer>
+            <div class="kinder">
+                <div class="k1">
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/logo/logo2_footer.png" alt="">
+                    <p>Users and submit their own items. You can create <br> different packages and by connecting with your PayPal <br>or Stripe account charge users for registration.</p>
+                </div> 
+                <div class="k2">
+                    <nav>
+                        <li><a href="#">Quick Link</a></li>
+                        <li><a href="#">Classes</a></li>
+                        <li><a href="#">Join With us </a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Event</a></li>
+                    </nav>
+                    <nav>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Tasimaioal </a></li>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">User Storeis</a></li>
+                    </nav>
+                </div>   
+            </div>
+        </footer>
     </div>
-
-    </div>
-    <!-- category special -->
-    <div class="category-special">
-        <img src="https://i.ibb.co/pyzK0Lm/category-special.webp" alt="category-special" border="0">
-    </div>
-
-    <!-- cards -->
-    <div class="card">
-        <div class="car"><img src="https://i.ibb.co/DDXtkrY/wmn-1.webp" alt="wmn-1" border="0"></div>
-        <div class="car"><img src="https://i.ibb.co/2gHvD9z/wmn-2.webp" alt="wmn-2" border="0"></div>
-        <div class="car"><img src="https://i.ibb.co/W2ks2K4/wmn-3.webp" alt="wmn-3" border="0"></div>
-        <div class="car"><img src="https://i.ibb.co/C0RHC4z/wmn-4.webp" alt="wmn-4" border="0"></div>
-        <div class="car"><img src="https://i.ibb.co/SmPLwYN/wmn-5.webp" alt="wmn-5" border="0"></div>
-        <div class="car"><img src="https://i.ibb.co/J5DqVh9/wmn-6.webp" alt="wmn-6" border="0"></div>
-
-
-    </div>
-
-    <div class="card">
-        <div class="car"><img src="https://i.ibb.co/z4fNhwy/wmn-7.webp" alt="wmn-7" border="0"></div>
-        <div class="car"><img src="https://i.ibb.co/SB48z7r/wmn-8.webp" alt="wmn-8" border="0"></div>
-        <div class="car"><img src="https://i.ibb.co/H23TCX7/wmn-9.webp" alt="wmn-9" border="0"></div>
-        <div class="car"><img src="https://i.ibb.co/VvpRSvm/wmn-10.webp" alt="wmn-10" border="0"></div>
-        <div class="car"><img src="https://i.ibb.co/ySbysfk/vmn-11.webp" alt="vmn-11" border="0"></div>
-        <div class="car"><img src="https://i.ibb.co/4Vfw17P/wmn-12.webp" alt="wmn-12" border="0"></div>
-
-
-    </div>
-
-    <div class="card card-last">
-        <div class="car"><img src="https://i.ibb.co/g43VdmK/wmn-13.webp" alt="wmn-13" border="0"></div>
-        <div class="car"><img src="https://i.ibb.co/3F49vP9/wmn-14.webp" alt="wmn-14" border="0"></div>
-        <div class="car"><img src="https://i.ibb.co/WsKT0Dd/wmn-15.webp" alt="wmn-15" border="0"></div>
-
-    </div>
-
-    <!-- more knockout offers -->
-    <div class="knock">
-        <img src="https://i.ibb.co/LhN20Kt/more-knock.webp" alt="more-knock" border="0">
-    </div>
-
-    </div>
-    </div>
-    <!-- javascript -->
-    <script>
-        const slider = document.querySelector('.slider');
-        const dotsContainer = document.querySelector('.dots');
-        const slidesPerView = 4;
-        const slideImages = [
-            "https://i.ibb.co/q50dWb0/slide-1.webp",
-            "https://i.ibb.co/Hq3G5c2/slide-3.webp",
-            "https://i.ibb.co/PzHsJC6/slide-5.webp",
-            "https://i.ibb.co/TmGjDR4/slide-6.webp",
-            "https://i.ibb.co/Z2LBsVY/slide-7.webp",
-            "https://i.ibb.co/fCyHPPL/slide-4.webp",
-            "https://i.ibb.co/7Qx6LMW/slide-2.webp",
-            "https://i.ibb.co/CKb5RYt/slide-8.webp"
-        ];
-
-        let currentIndex = 0;
-        const slideCount = slideImages.length;
-        let autoSlideInterval;
-
-        // Create slides
-        for (let i = 0; i < slideCount + slidesPerView; i++) {
-            const slide = document.createElement('div');
-            slide.className = 'slide';
-            const img = document.createElement('img');
-            img.src = slideImages[i % slideCount];
-            img.alt = `slider-${(i % slideCount) + 1}`;
-            slide.appendChild(img);
-            slider.appendChild(slide);
-        }
-
-        // Create dots
-        for (let i = 0; i < Math.ceil(slideCount / slidesPerView); i++) {
-            const dot = document.createElement('span');
-            dot.className = 'dot';
-            dot.addEventListener('click', () => {
-                moveSlide(i * slidesPerView);
-                stopAutoSlide();
-            });
-            dotsContainer.appendChild(dot);
-        }
-
-        const dots = document.querySelectorAll('.dot');
-        const slides = document.querySelectorAll('.slide');
-
-        function moveSlide(index) {
-            currentIndex = index;
-            const translateValue = -(currentIndex * (100 / slidesPerView));
-            slider.style.transform = `translateX(${translateValue}%)`;
-            updateDots();
-        }
-
-        function updateDots() {
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === Math.floor(currentIndex / slidesPerView));
-            });
-        }
-
-        function startAutoSlide() {
-            stopAutoSlide();
-            autoSlideInterval = setInterval(() => {
-                currentIndex = (currentIndex + 1) % slideCount;
-                moveSlide(currentIndex);
-            }, 5000);
-        }
-
-        function stopAutoSlide() {
-            clearInterval(autoSlideInterval);
-        }
-
-        updateDots();
-        startAutoSlide();
-    </script>
-
-<script src="../script/script.js"></script>
-
-</body>
-
-</html>
