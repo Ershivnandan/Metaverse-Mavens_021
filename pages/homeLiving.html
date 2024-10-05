@@ -14,396 +14,725 @@
     <!-- navbar -->
     <div>
         <nav class="bg-white border-none shadow-md">
-            <div class="container mx-auto px-4 py-3">
-                <div class="flex justify-between items-center">
-                    <div class="flex justify-center items-center gap-4">
-                        <div class="xl:hidden md:block sm:block hamburger w-[24px] h-[24px] cursor-pointer"
-                            id="hamburger">
-                            <img class="w-full h-full"
-                                src="https://img.icons8.com/?size=100&id=36389&format=png&color=000000" alt="" />
-                        </div>
-                        <!-- Logo Section -->
-                        <a href="#" class="flex items-center">
-                            <img src="https://i.ibb.co/wMFzc1M/myntra.webp" class="lg:h-14 h-10" alt="Myntra Logo" />
-                        </a>
-                    </div>
-
-                    <!-- Main Navigation -->
-                    <div class="hidden xl:block">
-                        <div class="flex space-x-8 text-[14px] font-semibold relative">
-                            <!-- Men Menu Item -->
-                            <div class="group relative border-b-4 border-transparent hover:border-[#ee5f73] pt-4 pb-3 transition-all duration-300"
-                                onmouseover="showDropdown('Men')" onmouseout="hideDropdown()">
-                                <a href="./pages/men.html" class="uppercase text-[#2c3042]">Men</a>
-                            </div>
-
-                            <!-- Women Menu Item -->
-                            <div class="group relative border-b-4 border-transparent hover:border-[#fb56c1] pt-4 pb-3 transition-all duration-300"
-                                onmouseover="showDropdown('Women')" onmouseout="hideDropdown()">
-                                <a href="./pages/women.html" class="uppercase text-[#2c3042]">Women</a>
-                            </div>
-
-                            <!-- Kids Menu Item -->
-                            <div class="group relative border-b-4 border-transparent hover:border-[#f26a10] pt-4 pb-3 transition-all duration-300"
-                                onmouseover="showDropdown('Kids')" onmouseout="hideDropdown()">
-                                <a href="./pages/kidsSection.html" class="uppercase text-[#2c3042]">Kids</a>
-                            </div>
-
-                            <!-- Home & Living Menu Item -->
-                            <div class="group relative border-b-4 border-transparent hover:border-[#f2c210] pt-4 pb-3 transition-all duration-300"
-                                onmouseover="showDropdown('Home & Living')" onmouseout="hideDropdown()">
-                                <a href="./pages/homeLiving.html" class="uppercase text-[#2c3042]">Home & Living</a>
-                            </div>
-
-                            <!-- Beauty Menu Item -->
-                            <div class="group relative border-b-4 border-transparent hover:border-[#0db7af] pt-4 pb-3 transition-all duration-300"
-                                onmouseover="showDropdown('Beauty')" onmouseout="hideDropdown()">
-                                <a href="./pages/beauty.html" class="uppercase text-[#2c3042]">Beauty</a>
-                            </div>
-
-                            <!-- Studio Menu Item -->
-                            <div class="group relative border-b-4 border-transparent hover:border-[#ff3f6c] pt-4 pb-3 transition-all duration-300"
-                                onmouseover="showDropdown('Studio')" onmouseout="hideDropdown()">
-                                <a href="./pages/studio.html" class="uppercase text-[#2c3042]">Studio <sup
-                                        class="text-pink-500">New</sup></a>
-                            </div>
-
-                            <!-- Hover Item (centered and shared for all items) -->
-                            <div id="hoverDropdown"
-                                class="absolute bg-white-900 hidden shadow-[inset 0 0 8px rgba(0, 0, 0, 1)] w-[70rem] h-[20rem] bg-white shadow-lg top-full left-0 right-0 transform -translate-x-[5rem] my-0 mx-auto transition-all duration-300 ease-in-out opacity-0">
-                                <div class="p-4 bg-white">
-                                    <div id="hoverContent">Hover Content</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Search Bar & Icons -->
-                    <div class="flex items-center gap-8">
-                        <div class="relative lg:flex hidden items-center bg-gray-100 rounded-full">
-                            <img src="https://img.icons8.com/?size=100&id=132&format=png&color=000000"
-                                class="w-5 h-5 ml-3" alt="Search Icon" />
-                            <input type="text" placeholder="Search for products, brands and more"
-                                class="bg-transparent px-4 py-2 w-[350px] text-sm focus:outline-none" />
-                        </div>
-
-                        <!-- Profile, Wishlist, Bag Icons -->
-                        <div class="flex items-center gap-6 relative">
-                            <div class="flex flex-col items-center cursor-pointer border-b-4 border-transparent hover:border-[#ff3f6c]"
-                                onmouseenter="handleProfileDropdown(true)" onmouseleave="handleProfileDropdown(false)">
-                                <img src="https://img.icons8.com/?size=100&id=23264&format=png&color=000000"
-                                    class="w-5 hidden lg:block xl:block" alt="Profile" />
-                                <div class="sm:block md:block lg:hidden xl:hidden">
-                                    <svg width="20px" height="20px" viewBox="0 0 16 18">
-                                        <g fill="none" fillrule="evenodd">
-                                            <path d="M-4-3h24v24H-4z"></path>
-                                            <g fill="#3E4152">
-                                                <path
-                                                    d="M3.23 1.3c-.788 0-1.43.61-1.43 1.359V15.34c0 .75.642 1.359 1.43 1.359h9.54c.788 0 1.43-.61 1.43-1.359V2.66c0-.75-.642-1.359-1.43-1.359H3.23zM13 18H3C1.621 18 .5 16.937.5 15.632V2.368C.5 1.063 1.621 0 3 0h10c1.379 0 2.5 1.063 2.5 2.368v13.264C15.5 16.937 14.379 18 13 18z">
-                                                </path>
-                                                <path
-                                                    d="M10.25 8.25h-1.5v-1.5a.75.75 0 00-1.5 0v1.5h-1.5a.75.75 0 000 1.5h1.5v1.5a.75.75 0 001.5 0v-1.5h1.5a.75.75 0 000-1.5">
-                                                </path>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <span class="text-xs hidden lg:block xl:block">Profile</span>
-                            </div>
-                            <div class="flex flex-col items-center cursor-pointer border-b-4 border-transparent">
-                                <img src="https://img.icons8.com/?size=100&id=87&format=png&color=000000" class="w-5"
-                                    alt="Wishlist" />
-                                <span class="text-xs hidden lg:block xl:block">Wishlist</span>
-                            </div>
-                            <div class="flex flex-col items-center cursor-pointer border-b-4 border-transparent">
-                                <img src="https://img.icons8.com/?size=100&id=VksxHreSn4ck&format=png&color=000000"
-                                    class="w-5" alt="Bag" />
-                                <span class="text-xs hidden lg:block xl:block">Bag</span>
-                            </div>
-
-                            <div id="hoverDropdown2"
-                                class="absolute bg-white-900 border border-red-900 transform [inset 0 0 8px rgba(0, 0, 0, 1)] w-[15rem] h-[20rem] bg-white shadow-lg top-full right-0 my-0 transition-all duration-300 ease-in-out opacity-0">
-                                <div class="p-4 bg-white text-center">
-                                    <div id="hoverContent2 text-center">Working on It</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+              <div class="flex justify-center items-center gap-4">
+                <div
+                  class="xl:hidden md:block sm:block hamburger w-[24px] h-[24px] cursor-pointer"
+                  id="hamburger"
+                >
+                  <img
+                    class="w-full h-full"
+                    src="https://img.icons8.com/?size=100&id=36389&format=png&color=000000"
+                    alt=""
+                  />
                 </div>
+  
+                <a href="#" class="flex items-center">
+                  <img
+                    src="https://i.ibb.co/wMFzc1M/myntra.webp"
+                    class="lg:h-14 h-10"
+                    alt="Myntra Logo"
+                  />
+                </a>
+              </div>
+  
+              <div class="hidden xl:block">
+                <div class="flex space-x-8 text-[14px] font-semibold relative">
+                  <div
+                    class="group relative border-b-4 border-transparent hover:border-[#ee5f73] pt-4 pb-3 transition-all duration-300"
+                    onmouseover="showDropdown('Men')"
+                    onmouseout="hideDropdown()"
+                  >
+                    <a href="../index.html" class="uppercase text-[#2c3042]">
+                      Men
+                    </a>
+                  </div>
+  
+                  <div
+                    class="group relative border-b-4 border-transparent hover:border-[#fb56c1] pt-4 pb-3 transition-all duration-300"
+                    onmouseover="showDropdown('Women')"
+                    onmouseout="hideDropdown()"
+                  >
+                    <a
+                      href="../pages/women.html"
+                      class="uppercase text-[#2c3042]"
+                    >
+                      Women
+                    </a>
+                  </div>
+  
+                  <div
+                    class="group relative border-b-4 border-transparent hover:border-[#f26a10] pt-4 pb-3 transition-all duration-300"
+                    onmouseover="showDropdown('Kids')"
+                    onmouseout="hideDropdown()"
+                  >
+                    <a
+                      href="../pages/kidsSection.html"
+                      class="uppercase text-[#2c3042]"
+                    >
+                      Kids
+                    </a>
+                  </div>
+  
+                  <div
+                    class="group relative border-b-4 border-transparent hover:border-[#f2c210] pt-4 pb-3 transition-all duration-300"
+                    onmouseover="showDropdown('Home & Living')"
+                    onmouseout="hideDropdown()"
+                  >
+                    <a
+                      href="../pages/homeLiving.html"
+                      class="uppercase text-[#2c3042]"
+                    >
+                      Home & Living
+                    </a>
+                  </div>
+  
+                  <div
+                    class="group relative border-b-4 border-transparent hover:border-[#0db7af] pt-4 pb-3 transition-all duration-300"
+                    onmouseover="showDropdown('Beauty')"
+                    onmouseout="hideDropdown()"
+                  >
+                    <a
+                      href="../pages/beauty.html"
+                      class="uppercase text-[#2c3042]"
+                    >
+                      Beauty
+                    </a>
+                  </div>
+  
+                  <div
+                    class="group relative border-b-4 border-transparent hover:border-[#ff3f6c] pt-4 pb-3 transition-all duration-300"
+                    onmouseover="showDropdown('Studio')"
+                    onmouseout="hideDropdown()"
+                  >
+                    <a
+                      href="../pages/studio.html"
+                      class="uppercase text-[#2c3042]"
+                    >
+                      Studio <sup class="text-pink-500">New</sup>
+                    </a>
+                  </div>
+  
+                  <div
+                    id="hoverDropdown"
+                    class="absolute z-20 bg-white-900 hidden shadow-[inset 0 0 8px rgba(0, 0, 0, 1)] w-[70rem] h-[20rem] bg-white shadow-lg top-full left-0 right-0 transform -translate-x-[5rem] my-0 mx-auto transition-all duration-300 ease-in-out opacity-0"
+                  >
+                    <div class="p-4 bg-white">
+                      <div id="hoverContent">Hover Content</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="flex items-center gap-8">
+                <div
+                  class="relative lg:flex hidden items-center bg-gray-100 rounded-full"
+                >
+                  <img
+                    src="https://img.icons8.com/?size=100&id=132&format=png&color=000000"
+                    class="w-5 h-5 ml-3"
+                    alt="Search Icon"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Search for products, brands and more"
+                    class="bg-transparent px-4 py-2 w-[350px] text-sm focus:outline-none"
+                  />
+                </div>
+  
+                <div class="flex items-center gap-6 relative">
+                  <div
+                    class="flex flex-col items-center cursor-pointer border-b-4 border-transparent hover:border-[#ff3f6c]"
+                    onmouseenter="handleProfileDropdown(true)"
+                  >
+                    <img
+                      src="https://img.icons8.com/?size=100&id=23264&format=png&color=000000"
+                      class="w-5 hidden lg:block xl:block"
+                      alt="Profile"
+                    />
+                    <div class="sm:block md:block lg:hidden xl:hidden">
+                      <svg width="20px" height="20px" viewBox="0 0 16 18">
+                        <g fill="none" fillrule="evenodd">
+                          <path d="M-4-3h24v24H-4z"></path>
+                          <g fill="#3E4152">
+                            <path
+                              d="M3.23 1.3c-.788 0-1.43.61-1.43 1.359V15.34c0 .75.642 1.359 1.43 1.359h9.54c.788 0 1.43-.61 1.43-1.359V2.66c0-.75-.642-1.359-1.43-1.359H3.23zM13 18H3C1.621 18 .5 16.937.5 15.632V2.368C.5 1.063 1.621 0 3 0h10c1.379 0 2.5 1.063 2.5 2.368v13.264C15.5 16.937 14.379 18 13 18z"
+                            ></path>
+                            <path
+                              d="M10.25 8.25h-1.5v-1.5a.75.75 0 00-1.5 0v1.5h-1.5a.75.75 0 000 1.5h1.5v1.5a.75.75 0 001.5 0v-1.5h1.5a.75.75 0 000-1.5"
+                            ></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <span class="text-xs hidden lg:block xl:block">Profile</span>
+                  </div>
+                  <div
+                    class="flex flex-col items-center cursor-pointer border-b-4 border-transparent"
+                  >
+                    <img
+                      src="https://img.icons8.com/?size=100&id=87&format=png&color=000000"
+                      class="w-5"
+                      alt="Wishlist"
+                    />
+                    <span class="text-xs hidden lg:block xl:block">Wishlist</span>
+                  </div>
+                  <div
+                    class="flex flex-col items-center cursor-pointer border-b-4 border-transparent"
+                  >
+                    <img
+                      src="https://img.icons8.com/?size=100&id=VksxHreSn4ck&format=png&color=000000"
+                      class="w-5"
+                      alt="Bag"
+                    />
+                    <span class="text-xs hidden lg:block xl:block">Bag</span>
+                  </div>
+  
+                  <div
+                    id="hoverDropdown2"
+                    onmouseleave="handleProfileDropdown(false)"
+                    class="absolute bg-white-900 p-2 transform [inset 0 0 8px rgba(0, 0, 0, 1)] w-[18rem] h-[20rem] bg-white shadow-lg top-full right-0 my-0 transition-all duration-300 ease-in-out opacity-0"
+                  >
+                    <div class="p-4 bg-white text-center">
+                      <div id="hoverContent2 text-center">
+                        <ul class="list-none">
+                          <li class="list-none">
+                            <p
+                              class="font-bold text-xs text-black text-start px-2 pb"
+                            >
+                              Welcome
+                            </p>
+                            <p
+                              class="text-[0.65rem] text-[#535766] font-semibold text-start ps-2 text-nowrap"
+                            >
+                              To access account and manage orders
+                            </p>
+                          </li>
+                          <li
+                            class="list-none items-start text-xs font-semibold flex px-2 py-1"
+                          >
+                            <button
+                              class="uppercase p-2 text-red-700 border border-transparent hover:border-[#ee5f73]"
+                            >
+                              Login / singup
+                            </button>
+                          </li>
+  
+                          <li
+                            class="list-none items-start text-[#535766] text-xs font-normal flex px-2 py-1"
+                          >
+                            <ul class="text-start leading-5">
+                              <li class="hover:font-semibold cursor-pointer">
+                                Orders
+                              </li>
+                              <li class="hover:font-semibold cursor-pointer">
+                                Wishlist
+                              </li>
+                              <li class="hover:font-semibold cursor-pointer">
+                                Gift Cards
+                              </li>
+                              <li class="hover:font-semibold cursor-pointer">
+                                Contact Us
+                              </li>
+                              <li class="hover:font-semibold cursor-pointer">
+                                <span>Myntra Insider</span>
+                                <span
+                                  class="text-white bg-[#ff3f6c] border border-[#ff3f6c] font-black px-[5px] py-0 text-[10px] -skew-x-10 rounded-[2px] m-[6px_0_-10px_10px] h-[7px] w-[25px]"
+                                >
+                                  New
+                                </span>
+                              </li>
+                            </ul>
+                          </li>
+                          <li
+                            class="list-none items-start text-[#535766] text-xs font-normal flex px-2 py-1"
+                          >
+                            <ul class="text-start leading-5">
+                              <li class="hover:font-semibold cursor-pointer">
+                                Myntra Credit
+                              </li>
+                              <li class="hover:font-semibold cursor-pointer">
+                                Coupons
+                              </li>
+                              <li class="hover:font-semibold cursor-pointer">
+                                Saved Cards
+                              </li>
+                              <li class="hover:font-semibold cursor-pointer">
+                                Saved VPA
+                              </li>
+                              <li class="hover:font-semibold cursor-pointer">
+                                Saved Addressess
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </nav>
-
-        <!-- Side Drawer -->
-        <div id="drawer-navigation"
-            class="fixed inset-y-0 top-0 left-0 w-9/12 h-screen bg-white shadow-lg transition-transform transform -translate-x-full">
-            <div>
-                <img src="https://i.ibb.co/twRQv26/9eec0b69-d6e0-49dd-8bb3-127dd6a8d68f1698648116571-Flat-500-2.webp"
-                    alt="9eec0b69-d6e0-49dd-8bb3-127dd6a8d68f1698648116571-Flat-500-2" />
-                <ul class="mt-4 space-y-2 text-black h-[80%] overflow-y-auto">
-                    <li>
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                            aria-controls="sliderDropdown" data-collapse-toggle="sliderDropdown" id="dropdownButton">
-                            <span
-                                class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Men's</span>
-                        </button>
-
-                        <ul id="sliderDropdown" class="hidden py-2 space-y-2">
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Topwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Indian
-                                    & Festive Wear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bottomwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Innerwear
-                                    & Sleepwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Plus
-                                    Size</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Footwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Personal
-                                    Care & Grooming</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Sunglasses
-                                    & Frames</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Watches</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Sports
-                                    & Active Wear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Gadgets</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Fashion
-                                    Accessories</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bags
-                                    & Backpacks</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Luggages
-                                    & Trolleys</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                            aria-controls="womenDropdown" data-collapse-toggle="womenDropdown" id="womenButton">
-                            <span
-                                class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Women's</span>
-                        </button>
-
-                        <ul id="womenDropdown" class="hidden py-2 space-y-2">
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Topwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Indian
-                                    & Festive Wear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bottomwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Innerwear
-                                    & Sleepwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Plus
-                                    Size</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Footwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Personal
-                                    Care & Grooming</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Sunglasses
-                                    & Frames</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Watches</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Sports
-                                    & Active Wear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Gadgets</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Fashion
-                                    Accessories</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bags
-                                    & Backpacks</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Luggages
-                                    & Trolleys</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                            aria-controls="kidsDropdown" data-collapse-toggle="kidsDropdown" id="kidsButton">
-                            <span
-                                class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Kids</span>
-                        </button>
-
-                        <ul id="kidsDropdown" class="hidden py-2 space-y-2">
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Topwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bottomwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Kids'
-                                    Footwear</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Toys
-                                    & Games</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">School
-                                    Supplies</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                            aria-controls="homeLivingDropdown" data-collapse-toggle="homeLivingDropdown"
-                            id="homeLivingButton">
-                            <span
-                                class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Home
-                                Living</span>
-                        </button>
-
-                        <ul id="homeLivingDropdown" class="hidden py-2 space-y-2">
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Furniture</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Decor</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bedding</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Kitchenware</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Storage
-                                    & Organization</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <button type="button"
-                            class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                            aria-controls="beautyDropdown" data-collapse-toggle="beautyDropdown" id="beautyButton">
-                            <span
-                                class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Beauty</span>
-                        </button>
-
-                        <ul id="beautyDropdown" class="hidden py-2 space-y-2">
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Skincare</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Makeup</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Fragrances</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Hair
-                                    Care</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">Bath
-                                    & Body</a>
-                            </li>
-                        </ul>
-                    </li>
+  
+        <div
+          id="drawer-navigation"
+          class="fixed inset-y-0 top-0 left-0 w-9/12 h-screen bg-white shadow-lg transition-transform transform -translate-x-full"
+        >
+          <div>
+            <img
+              src="https://i.ibb.co/twRQv26/9eec0b69-d6e0-49dd-8bb3-127dd6a8d68f1698648116571-Flat-500-2.webp"
+              alt="9eec0b69-d6e0-49dd-8bb3-127dd6a8d68f1698648116571-Flat-500-2"
+            />
+            <ul class="mt-4 space-y-2 text-black h-[80%] overflow-y-auto">
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
+                  aria-controls="sliderDropdown"
+                  data-collapse-toggle="sliderDropdown"
+                  id="dropdownButton"
+                >
+                  <span
+                    class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
+                  >
+                    Men's
+                  </span>
+                </button>
+  
+                <ul id="sliderDropdown" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Topwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Indian & Festive Wear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Bottomwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Innerwear & Sleepwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Plus Size
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Footwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Personal Care & Grooming
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Sunglasses & Frames
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Watches
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Sports & Active Wear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Gadgets
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Fashion Accessories
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Bags & Backpacks
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Luggages & Trolleys
+                    </a>
+                  </li>
                 </ul>
-                <div class="absolute bottom-0 w-full bg-white">
-                    <img class="w-full"
-                        src="https://i.ibb.co/YBBFrsJ/856cb741-8473-4d5e-b6e3-a52b3d98c99e1672386455977-PWA-App-Download-banner.png"
-                        alt="856cb741-8473-4d5e-b6e3-a52b3d98c99e1672386455977-PWA-App-Download-banner" />
-                </div>
+              </li>
+  
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
+                  aria-controls="womenDropdown"
+                  data-collapse-toggle="womenDropdown"
+                  id="womenButton"
+                >
+                  <span
+                    class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
+                  >
+                    Women's
+                  </span>
+                </button>
+  
+                <ul id="womenDropdown" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Topwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Indian & Festive Wear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Bottomwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Innerwear & Sleepwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Plus Size
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Footwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Personal Care & Grooming
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Sunglasses & Frames
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Watches
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Sports & Active Wear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Gadgets
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Fashion Accessories
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Bags & Backpacks
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Luggages & Trolleys
+                    </a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
+                  aria-controls="kidsDropdown"
+                  data-collapse-toggle="kidsDropdown"
+                  id="kidsButton"
+                >
+                  <span
+                    class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
+                  >
+                    Kids
+                  </span>
+                </button>
+  
+                <ul id="kidsDropdown" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Topwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Bottomwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Kids' Footwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Toys & Games
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      School Supplies
+                    </a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
+                  aria-controls="homeLivingDropdown"
+                  data-collapse-toggle="homeLivingDropdown"
+                  id="homeLivingButton"
+                >
+                  <span
+                    class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
+                  >
+                    Home Living
+                  </span>
+                </button>
+  
+                <ul id="homeLivingDropdown" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Furniture
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Decor
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Bedding
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Kitchenware
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Storage & Organization
+                    </a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
+                  aria-controls="beautyDropdown"
+                  data-collapse-toggle="beautyDropdown"
+                  id="beautyButton"
+                >
+                  <span
+                    class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
+                  >
+                    Beauty
+                  </span>
+                </button>
+  
+                <ul id="beautyDropdown" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Skincare
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Makeup
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Fragrances
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Hair Care
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Bath & Body
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="absolute bottom-0 w-full bg-white">
+              <img
+                class="w-full"
+                src="https://i.ibb.co/YBBFrsJ/856cb741-8473-4d5e-b6e3-a52b3d98c99e1672386455977-PWA-App-Download-banner.png"
+                alt="856cb741-8473-4d5e-b6e3-a52b3d98c99e1672386455977-PWA-App-Download-banner"
+              />
             </div>
+          </div>
         </div>
     </div>
     <main class="laptop hidden sm:block">
@@ -651,6 +980,162 @@
                         class="w-full h-auto transition-transform duration-300 ease-in-out hover:scale-110" /></a>
             </div>
         </div>
+        <!--footer-->
+        <footer class="bg-gray-100 p-6">
+            <div
+              class="upper grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 w-[90%] my-0 mx-auto"
+            >
+              <div
+                class="grid grid-cols-2 gap-10 text-xs leading-6 text-[#696b79] py-1"
+              >
+                <ul class="capitalize">
+                  <h4 class="uppercase text-black font-bold text-xs">
+                    online shopping
+                  </h4>
+                  <li>Men</li>
+                  <li>Women</li>
+                  <li>Kids</li>
+                  <li>Home & Living</li>
+                  <li>Beauty</li>
+                  <li>Gift Cards</li>
+                  <li>Myntra Insider</li>
+                </ul>
+                <ul class="capitalize">
+                  <h4 class="uppercase text-black font-bold text-xs">
+                    customer policies
+                  </h4>
+                  <li>Contsct Us</li>
+                  <li>FAQ</li>
+                  <li>T&C</li>
+                  <li>terms Of Use</li>
+                  <li>Track orders</li>
+                  <li>Shipping</li>
+                  <li>cancellation</li>
+                  <li>returns</li>
+                  <li>privecy policy</li>
+                  <li>Grivence officer</li>
+                </ul>
+                <ul class="capitalize -mt-20">
+                  <h4 class="uppercase text-black font-bold text-xs">useful links</h4>
+                  <li>blog</li>
+                  <li>career</li>
+                  <li>site map</li>
+                  <li>corporate information</li>
+                  <li>cleartrip</li>
+                </ul>
+              </div>
+      
+              <div class="py-1">
+                <h4 class="uppercase text-black font-bold text-xs pb-2">
+                  EXPERIENCE MYNTRA APP ON MOBILE
+                </h4>
+      
+                <div class="flex gap-5 items-center">
+                  <img
+                    class="h-[43px] w-auto"
+                    src="https://i.ibb.co/DL2ky1N/5a902dbf7f96951c82922875.png"
+                    alt="Download on Google Play"
+                  />
+                  <img
+                    class="h-[30px] w-auto"
+                    src="https://i.ibb.co/RvTgLGp/5a902db97f96951c82922874.png"
+                    alt="Download on the App Store"
+                  />
+                </div>
+      
+                <div class="py-4">
+                  <h6 class="uppercase text-black font-bold text-xs py-2">
+                    Keep in touch
+                  </h6>
+                  <div class="flex gap-4">
+                    <a>
+                      <img
+                        class="w-8"
+                        src="https://img.icons8.com/?size=100&id=59780&format=png&color=696b79"
+                        alt=""
+                      />
+                    </a>
+                    <a>
+                      <img
+                        class="w-8"
+                        src="https://img.icons8.com/?size=100&id=8824&format=png&color=696b79"
+                        alt=""
+                      />
+                    </a>
+                    <a>
+                      <img
+                        class="w-8"
+                        src="https://img.icons8.com/?size=100&id=37326&format=png&color=696b79"
+                        alt=""
+                      />
+                    </a>
+                    <a>
+                      <img
+                        class="w-8"
+                        src="https://img.icons8.com/?size=100&id=16162&format=png&color=696b79"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="py-1">
+                <div class="flex gap-5 mb-4 items-center">
+                  <img
+                    src="https://i.ibb.co/dkFBBjn/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png"
+                    alt="6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original"
+                    class="h-14 p-1 w-auto -ms-2"
+                  />
+                  <p class="text-black text-sm -ms-2">
+                    <span class="font-bold">100% ORIGINAL</span> guarantee for all
+                    products at myntra.com
+                  </p>
+                </div>
+                <div class="flex gap-5 items-center">
+                  <img
+                    class="h-14 p-1 w-auto"
+                    src="https://i.ibb.co/sgnY3Nj/becb1b16-86cc-4e78-bdc7-7801c17947831684737106127-Return-Window-image.png"
+                    alt="becb1b16-86cc-4e78-bdc7-7801c17947831684737106127-Return-Window-image"
+                  />
+                  <p class="text-black text-sm -ms-2">
+                    <span class="font-bold">100% ORIGINAL</span> guarantee for all
+                    products at myntra.com
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="middle w-[90%] my-5 mx-auto">
+              <div>
+                <h4 class="uppercase text-black font-bold text-xs">
+                  popular searches
+                </h4>
+      
+                <p class="my-2 text-sm leading-7 text-[#696b79]">
+                  Pillow | Towels | And | Towel | Sets | Bath | Robes | Bathroom | Accessories | Bathroom |
+                  Rugs | Blankets | Cushions | Candles | Photo | Frame | Wall | Art | Home | Decor |
+                  Windchimes | Wall | Shelves | Wall | Stickers | & | Decals | Candle | Holder | Bed |
+                  Covers | Coasters | Home | Furnishing | Clock | Plants | & | Planters | Scented | Candles |
+                  Mirrors | Wall | Decor | Fountains | Vases | Showpieces | Wall | Lamps | Table | Lamps |
+                  Tableware | Bar | & | Drinkware | Kitchen | Storage | Curtains | Carpets | Bed | Sheets |
+                  Doormats | Diwans | Face | Towels | Hand | Towels | Laundry | Bags | Key | Holders |
+                  Aroma | Oil | Diffusers | Bedding | Sets | Bins | Hooks | & | Holders | Cushion |
+                  Covers | Pillow | Covers | Table | Placemats | Table | Covers | Runners | Water | Bottle 
+                </p>
+      
+                <div class="text-[#696b79] flex justify-between my-7 text-sm">
+                  <p>
+                    In case of any concern,<span class="font-bold text-blue-700">
+                      Contact Us</span
+                    >
+                  </p>
+                  <p>© 2024 www.myntra.com. All rights reserved.</p>
+                  <p>A Flipkart company</p>
+                </div>
+              </div>
+            </div>
+          </footer> 
     </main>
     <main class="mobile block sm:hidden">
         <style>
@@ -725,14 +1210,39 @@
 
 
 
-        <img src="https://i.ibb.co/tbjyxxg/image.png" alt="image" class="w-full h-auto object-contain" />
+        
 
         <div class="w-full" style="height: 45px; background-color:transparent;"></div>
+        
+      
 
 
         <!--2nd-->
         <div class="w-screen h-auto flex justify-center items-center"></div>
         <img src="https://i.ibb.co/L60cBfY/e.jpg" alt="Image" class="w-full h-auto object-cover" />
+        </div>
+        <div>
+          <div class="text-black font-bold ms-3 text-left rtl:text-right whitespace-nowrap border-b border-gray-300 py-2">
+              Bed
+          </div>
+          <div class="text-black font-bold ms-3 text-left rtl:text-right whitespace-nowrap border-b border-gray-300 py-2">
+              Bath
+          </div>
+          <div class="text-black font-bold ms-3 text-left rtl:text-right whitespace-nowrap border-b border-gray-300 py-2">
+              Furnishing
+          </div>
+          <div class="text-black font-bold ms-3 text-left rtl:text-right whitespace-nowrap border-b border-gray-300 py-2">
+              Home Decor
+          </div>
+          <div class="text-black font-bold ms-3 text-left rtl:text-right whitespace-nowrap border-b border-gray-300 py-2">
+              Kitchen & Dining
+          </div>
+          <div class="text-black font-bold ms-3 text-left rtl:text-right whitespace-nowrap border-b border-gray-300 py-2">
+              Storage and Organiser
+          </div>
+          <div class="text-black font-bold ms-3 text-left rtl:text-right whitespace-nowrap border-b border-gray-300 py-2">
+              Kids
+          </div>
         </div>
 
         <div class="w-full" style="height: 45px; background-color:transparent;"></div>
@@ -1045,7 +1555,7 @@
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
+<script src="./script/footerManager.js"></script>
 <script src="../script/script.js"></script>
 
 </html>
