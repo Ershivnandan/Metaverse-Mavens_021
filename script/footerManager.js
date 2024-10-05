@@ -1,7 +1,7 @@
 class myntraFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-            <footer class="bg-gray-100 p-6 mt-10">
+            <footer class="bg-gray-100 p-6 mt-10 hidden lg:block">
       <div
         class="upper grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 w-[90%] my-0 mx-auto"
       >
@@ -607,9 +607,8 @@ class myntraFooter extends HTMLElement {
           class="inline-flex flex-col items-center justify-center px-5 cursor-pointer"
           
         >
-        <a href="./profile.html">
+        <a href="./pages/wishlist.html">
 
-        </a>
           <img
             class="w-8 h-8"
             src="https://i.ibb.co/vdLn9FW/cd445369-7bc7-4a26-96bd-dba3e17e94581707389731276-profile.webp"
@@ -621,6 +620,7 @@ class myntraFooter extends HTMLElement {
             >Profile</span
           >
         </button>
+        </a>
       </div>
     </div>
         `;
