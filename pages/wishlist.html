@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wishlist</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/navbar.css">
   </head>
 
   <body>
@@ -43,7 +44,7 @@
                   onmouseover="showDropdown('Men')"
                   onmouseout="hideDropdown()"
                 >
-                  <a href="./pages/men.html" class="uppercase text-[#2c3042]"
+                  <a href="../index.html" class="uppercase text-[#2c3042]"
                     >Men</a
                   >
                 </div>
@@ -54,7 +55,7 @@
                   onmouseover="showDropdown('Women')"
                   onmouseout="hideDropdown()"
                 >
-                  <a href="./pages/women.html" class="uppercase text-[#2c3042]"
+                  <a href="./women.html" class="uppercase text-[#2c3042]"
                     >Women</a
                   >
                 </div>
@@ -66,7 +67,7 @@
                   onmouseout="hideDropdown()"
                 >
                   <a
-                    href="./pages/kidsSection.html"
+                    href="./kidsSection.html"
                     class="uppercase text-[#2c3042]"
                     >Kids</a
                   >
@@ -79,7 +80,7 @@
                   onmouseout="hideDropdown()"
                 >
                   <a
-                    href="./pages/homeLiving.html"
+                    href="./homeLiving.html"
                     class="uppercase text-[#2c3042]"
                     >Home & Living</a
                   >
@@ -91,7 +92,7 @@
                   onmouseover="showDropdown('Beauty')"
                   onmouseout="hideDropdown()"
                 >
-                  <a href="./pages/beauty.html" class="uppercase text-[#2c3042]"
+                  <a href="./beauty.html" class="uppercase text-[#2c3042]"
                     >Beauty</a
                   >
                 </div>
@@ -102,7 +103,7 @@
                   onmouseover="showDropdown('Studio')"
                   onmouseout="hideDropdown()"
                 >
-                  <a href="./pages/studio.html" class="uppercase text-[#2c3042]"
+                  <a href="./studio.html" class="uppercase text-[#2c3042]"
                     >Studio <sup class="text-pink-500">New</sup></a
                   >
                 </div>
@@ -173,7 +174,7 @@
                     class="w-5"
                     alt="Wishlist"
                   />
-                  <span class="text-xs hidden lg:block xl:block">Wishlist</span>
+                  <a href="#"> <span class="text-xs hidden lg:block xl:block">Wishlist</span></a>
                 </div>
                 <div
                   class="flex flex-col items-center cursor-pointer border-b-4 border-transparent"
@@ -202,473 +203,473 @@
 
       <!-- Side Drawer -->
       <div
-        id="drawer-navigation"
-        class="fixed inset-y-0 top-0 left-0 w-9/12 h-screen bg-white shadow-lg transition-transform transform -translate-x-full"
-      >
-        <div>
-          <img
-            src="https://i.ibb.co/twRQv26/9eec0b69-d6e0-49dd-8bb3-127dd6a8d68f1698648116571-Flat-500-2.webp"
-            alt="9eec0b69-d6e0-49dd-8bb3-127dd6a8d68f1698648116571-Flat-500-2"
-          />
-          <ul class="mt-4 space-y-2 text-black h-[80%] overflow-y-auto">
-            <li>
-              <button
-                type="button"
-                class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                aria-controls="sliderDropdown"
-                data-collapse-toggle="sliderDropdown"
-                id="dropdownButton"
-              >
-                <a href="../index.html">
-                  <span
+          id="drawer-navigation"
+          class="fixed inset-y-0 top-0 left-0 w-9/12 h-screen bg-white shadow-lg transition-transform transform -translate-x-full"
+        >
+          <div>
+            <img
+              src="https://i.ibb.co/twRQv26/9eec0b69-d6e0-49dd-8bb3-127dd6a8d68f1698648116571-Flat-500-2.webp"
+              alt="9eec0b69-d6e0-49dd-8bb3-127dd6a8d68f1698648116571-Flat-500-2"
+            />
+            <ul class="mt-4 space-y-2 text-black h-[80%] overflow-y-auto">
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
+                  aria-controls="sliderDropdown"
+                  data-collapse-toggle="sliderDropdown"
+                  id="dropdownButton"
+                >
+                  <a href="../index.html">
+                    <span
                     class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
                   >
                     Men's
                   </span>
-                </a>
-              </button>
-
-              <ul id="sliderDropdown" class="hidden py-2 space-y-2">
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Topwear
                   </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Indian & Festive Wear
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Bottomwear
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Innerwear & Sleepwear
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Plus Size
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Footwear
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Personal Care & Grooming
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Sunglasses & Frames
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Watches
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Sports & Active Wear
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Gadgets
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Fashion Accessories
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Bags & Backpacks
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Luggages & Trolleys
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <button
-                type="button"
-                class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                aria-controls="womenDropdown"
-                data-collapse-toggle="womenDropdown"
-                id="womenButton"
-              >
-                <a href="./women.html">
-                  <span
+                </button>
+ 
+                <ul id="sliderDropdown" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Topwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Indian & Festive Wear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Bottomwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Innerwear & Sleepwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Plus Size
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Footwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Personal Care & Grooming
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Sunglasses & Frames
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Watches
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Sports & Active Wear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Gadgets
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Fashion Accessories
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Bags & Backpacks
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Luggages & Trolleys
+                    </a>
+                  </li>
+                </ul>
+              </li>
+ 
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
+                  aria-controls="womenDropdown"
+                  data-collapse-toggle="womenDropdown"
+                  id="womenButton"
+                >
+                 <a href="./women.html">
+                   <span
                     class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
                   >
                     Women's
                   </span>
-                </a>
-              </button>
-
-              <ul id="womenDropdown" class="hidden py-2 space-y-2">
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Topwear
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Indian & Festive Wear
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Bottomwear
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Innerwear & Sleepwear
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Plus Size
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Footwear
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Personal Care & Grooming
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Sunglasses & Frames
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Watches
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Sports & Active Wear
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Gadgets
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Fashion Accessories
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Bags & Backpacks
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Luggages & Trolleys
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <button
-                type="button"
-                class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                aria-controls="kidsDropdown"
-                data-collapse-toggle="kidsDropdown"
-                id="kidsButton"
-              >
-                <a href="./kidsSection.html">
+                 </a>
+                </button>
+ 
+                <ul id="womenDropdown" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Topwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Indian & Festive Wear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Bottomwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Innerwear & Sleepwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Plus Size
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Footwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Personal Care & Grooming
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Sunglasses & Frames
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Watches
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Sports & Active Wear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Gadgets
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Fashion Accessories
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Bags & Backpacks
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Luggages & Trolleys
+                    </a>
+                  </li>
+                </ul>
+              </li>
+ 
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
+                  aria-controls="kidsDropdown"
+                  data-collapse-toggle="kidsDropdown"
+                  id="kidsButton"
+                >
+                 <a href="./kidsSection.html">
                   <span
-                    class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
-                  >
-                    Kids
-                  </span>
-                </a>
-              </button>
-
-              <ul id="kidsDropdown" class="hidden py-2 space-y-2">
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Topwear
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Bottomwear
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Kids' Footwear
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Toys & Games
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    School Supplies
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <button
-                type="button"
-                class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                aria-controls="homeLivingDropdown"
-                data-collapse-toggle="homeLivingDropdown"
-                id="homeLivingButton"
-              >
-                <a href="./homeLiving.html">
+                  class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
+                >
+                  Kids
+                </span>
+                 </a>
+                </button>
+ 
+                <ul id="kidsDropdown" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Topwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Bottomwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Kids' Footwear
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Toys & Games
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      School Supplies
+                    </a>
+                  </li>
+                </ul>
+              </li>
+ 
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
+                  aria-controls="homeLivingDropdown"
+                  data-collapse-toggle="homeLivingDropdown"
+                  id="homeLivingButton"
+                >
+                 <a href="./homeLiving.html">
                   <span
-                    class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
-                  >
-                    Home Living
-                  </span>
-                </a>
-              </button>
-
-              <ul id="homeLivingDropdown" class="hidden py-2 space-y-2">
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Furniture
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Decor
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Bedding
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Kitchenware
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Storage & Organization
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <button
-                type="button"
-                class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
-                aria-controls="beautyDropdown"
-                data-collapse-toggle="beautyDropdown"
-                id="beautyButton"
-              >
-                <a href="./beauty.html">
-                  <span
+                  class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
+                >
+                  Home Living
+                </span>
+                 </a>
+                </button>
+ 
+                <ul id="homeLivingDropdown" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Furniture
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Decor
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Bedding
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Kitchenware
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Storage & Organization
+                    </a>
+                  </li>
+                </ul>
+              </li>
+ 
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base transition duration-75 rounded-lg group hover:bg-gray-100"
+                  aria-controls="beautyDropdown"
+                  data-collapse-toggle="beautyDropdown"
+                  id="beautyButton"
+                >
+                  <a href="./beauty.html">
+                    <span
                     class="text-black font-bold flex-1 ms-3 text-left rtl:text-right whitespace-nowrap"
                   >
                     Beauty
                   </span>
-                </a>
-              </button>
-
-              <ul id="beautyDropdown" class="hidden py-2 space-y-2">
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Skincare
                   </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Makeup
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Fragrances
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Hair Care
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                  >
-                    Bath & Body
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <div class="absolute bottom-0 w-full bg-white">
-            <img
-              class="w-full"
-              src="https://i.ibb.co/YBBFrsJ/856cb741-8473-4d5e-b6e3-a52b3d98c99e1672386455977-PWA-App-Download-banner.png"
-              alt="856cb741-8473-4d5e-b6e3-a52b3d98c99e1672386455977-PWA-App-Download-banner"
-            />
+                </button>
+ 
+                <ul id="beautyDropdown" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Skincare
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Makeup
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Fragrances
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Hair Care
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                    >
+                      Bath & Body
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="absolute bottom-0 w-full bg-white">
+              <img
+                class="w-full"
+                src="https://i.ibb.co/YBBFrsJ/856cb741-8473-4d5e-b6e3-a52b3d98c99e1672386455977-PWA-App-Download-banner.png"
+                alt="856cb741-8473-4d5e-b6e3-a52b3d98c99e1672386455977-PWA-App-Download-banner"
+              />
+            </div>
           </div>
         </div>
-      </div>
     </div>
 
     <div class="flex items-center justify-center h-screen bg-gray-50">
@@ -690,4 +691,5 @@
       </div>
     </div>
   </body>
+  <script src="../script/script.js"></script>
 </html>
