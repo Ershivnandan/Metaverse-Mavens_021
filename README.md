@@ -37,18 +37,18 @@ Frontend: [Myntra Clone App](https://myntra-team-project.vercel.app/)
 │   ├── women.css
 │   └── globalStyle.css
 ├── index.html
+├──globalStyle.css
 ├── myntra.png
 ├── README.md
-├── readme.txt
 └── script.js
 
 ```
 
 ## Video Walkthrough of the Project
-[Video Walkthrough of Features](#) (1 - 3 minutes)
+[Video Walkthrough of Features](https://youtu.be/f85tTEdvpjA)
 
 ## Video Walkthrough of the Codebase
-[Video Walkthrough of Codebase](#) (1 - 5 minutes)
+[Video Walkthrough of Codebase](https://youtu.be/f85tTEdvpjA) 
 
 ## Features
 - Explore a wide variety of fashion products.
@@ -70,7 +70,7 @@ To set up the project locally, follow these steps:
 git clone https://github.com/your-repo/myntra-clone.git
 
 # Navigate into the project directory
-cd myntra-clone/frontend
+cd Metaverse-Mavens_021
 
 # Open index.html in your browser
 ```
