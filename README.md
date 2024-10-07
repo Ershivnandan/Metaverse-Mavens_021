@@ -67,7 +67,7 @@ To set up the project locally, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/myntra-clone.git
+git clone https://github.com/Ershivnandan/Metaverse-Mavens_021.git
 
 # Navigate into the project directory
 cd Metaverse-Mavens_021
